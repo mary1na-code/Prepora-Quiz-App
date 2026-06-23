@@ -1,4 +1,4 @@
-import { AppLogo } from '../../config/icons'
+// import { AppLogo } from '../../config/icons'
 import { useQuiz } from '../../context/QuizContext'
 import { quizTopics } from '../../data/quizTopics'
 import { ScreenTypes } from '../../types'
@@ -20,16 +20,17 @@ const QuizTopicsScreen: React.FC = () => {
     <PageCenter light justifyCenter>
       <CenterCardContainer>
         <div className="text-app-logo mb-8 text-center md:mb-12">
-          <AppLogo width={220} />
+          {/* COMMENTED OUT 'import app logo' and <AppLogo width={220} /> */}
+          {/* <AppLogo width={220} /> */}
         </div>
         <h2 className="mb-5 text-center text-3xl font-bold">
           WELCOME TO <HighlightedText> PREPORA</HighlightedText>
         </h2>
         <p className="text-center text-xl leading-7 font-medium">
-          Select topic below to start your Quiz.
+          Select a course below to start your revision.
         </p>
         <div className="mt-10 mb-11 flex max-w-full flex-wrap justify-center gap-5 md:max-w-[60%] md:gap-7">
-          {quizTopics.map(({ title, icon, disabled }) => (
+          {quizTopics.map(({ title, disabled }) => (
             <div
               key={title}
               onClick={() => !disabled && selectQuizTopic(title)}
@@ -43,7 +44,7 @@ const QuizTopicsScreen: React.FC = () => {
                   : `border-disabled-button border`
               )}
             >
-              {icon}
+        {/* {icon} was deleted after deletion of icon parameter */}
               <span className="ml-3 text-base font-medium md:text-lg md:font-semibold">
                 {title}
               </span>
