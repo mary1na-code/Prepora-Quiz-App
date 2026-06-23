@@ -19,10 +19,10 @@ const QuizDetailsScreen = () => {
   return (
     <PageCenter light justifyCenter>
       <CenterCardContainer>
-        <div className="text-app-logo mb-8 text-center md:mb-12">
+        {/* <div className="text-app-logo mb-8 text-center md:mb-12">
           <AppLogo width={220} />
-        </div>
-        <h2 className="text-theme-color text-3xl font-bold">XEVEN QUIZ</h2>
+        </div> */}
+        <h2 className="text-theme-color text-3xl font-bold">Second Semester Exam Quiz Prevision</h2>
 
         <div className="mt-4 mb-10 max-w-[500px] text-center text-xl font-medium">
           <p className="text-5 mt-4 leading-[1.3] font-medium">
