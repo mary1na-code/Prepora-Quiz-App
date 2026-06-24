@@ -29,7 +29,7 @@ const QuizTopicsScreen: React.FC = () => {
           Select topic below to start your Quiz.
         </p>
         <div className="mt-10 mb-11 flex max-w-full flex-wrap justify-center gap-5 md:max-w-[60%] md:gap-7">
-          {quizTopics.map(({ title, icon, disabled }) => (
+          {quizTopics.map(({ title, disabled }) => (
             <div
               key={title}
               onClick={() => !disabled && selectQuizTopic(title)}
@@ -43,7 +43,6 @@ const QuizTopicsScreen: React.FC = () => {
                   : `border-disabled-button border`
               )}
             >
-              {icon}
               <span className="ml-3 text-base font-medium md:text-lg md:font-semibold">
                 {title}
               </span>

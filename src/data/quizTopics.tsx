@@ -13,7 +13,7 @@
 type QuizTopic = {
   title: string
   // icon: ReactNode
-  disabled?: boolean
+  disabled?: boolean 
 }
 
 export const quizTopics: QuizTopic[] = [
