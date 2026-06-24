@@ -1,177 +1,136 @@
-// Question Types
-// 1. MCQs | Multiple Choice | single
-// 2. boolean | true/false | single
-// 3. MAQs | Multiple Answers | multiple
-
 import { Topic } from '.'
-import CodeSnippet1 from '../../assets/images/code-snippet-1.png'
-
-
 
 export const gst112: Topic = {
   topic: 'GST 112',
-  level: 'Intermediate',
+  level: 'Easy',
   totalQuestions: 11,
   totalScore: 95,
   totalTime: 600,
+
   questions: [
     {
-      question: 'What is JSX in React?',
+      question: 'What does the acronym "OFN" stand for?',
       choices: [
-        'A syntax extension for JavaScript that allows writing HTML-like code in JavaScript',
-        'A state management library for React applications',
-        'A build tool for bundling React applications',
-        'A testing framework for React components',
+        'Operation Feed the Nation',
+        'Office for National Development',
+        'Operation For Nigeria',
+        'Organization for Food and Nutrition',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Operation Feed the Nation'],
+      score: 2,
+    },
+    {
+      question: 'What does "WAIC" stand for?',
+      choices: [
+        'Women Against Indiscipline and Crime',
+        'War Against Indiscipline and Corruption',
+        'West African Indiscipline Committee',
+        'Welfare Agency for Integrity and Conduct',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['War Against Indiscipline and Corruption'],
+      score: 2,
+    },
+    {
+      question: 'What does "MAMSER" stand for?',
+      choices: [
+        'Mass Mobilization for Self-Reliance, Social Justice and Economic Recovery',
+        'Ministry for Agriculture, Self-Reliance and Economic Reform',
+        'Mass Movement for Social Equality and Reform',
+        'Mobilization Agency for Manpower, Skills and Education Reform',
       ],
       type: 'MCQs',
       correctAnswers: [
-        'A syntax extension for JavaScript that allows writing HTML-like code in JavaScript',
+        'Mass Mobilization for Self-Reliance, Social Justice and Economic Recovery',
       ],
-      score: 10,
+      score: 2,
     },
     {
-      question: 'React components must always return a single JSX element.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
-    },
-    {
-      question: 'What is the purpose of React components?',
+      question: 'What does "NOA" stand for?',
       choices: [
-        'To handle HTTP requests and fetch data from APIs',
-        'To manage the state of a React application',
-        'To define the structure and appearance of the user interface',
-        'To handle user interactions and events',
+        'National Orientation Agency',
+        'Nigerian Organization for Agriculture',
+        'National Office of Administration',
+        'Nigerian Orientation Alliance',
       ],
       type: 'MCQs',
-      correctAnswers: ['To define the structure and appearance of the user interface'],
-      score: 10,
+      correctAnswers: ['National Orientation Agency'],
+      score: 2,
     },
     {
-      question:
-        'Which of the following are valid React lifecycle methods? (Select all that apply)',
+      question: 'The Green Revolution refers to agricultural initiatives implemented mainly during which period?',
       choices: [
-        'componentWillMount',
-        'componentDidMount',
-        'componentWillUpdate',
-        'componentDidUpdate',
-      ],
-      type: 'MAQs',
-      correctAnswers: ['componentDidMount', 'componentWillUpdate', 'componentDidUpdate'],
-      score: 10,
-    },
-    {
-      question: 'What will be the output of the following React code?',
-      code: `import React, { useState } from 'react';
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-    </div>
-  );
-};
-
-const App = () => {
-  return <Counter />;
-};
-
-export default App;`,
-      choices: ['Count: 0', 'Count: 1', 'Count: undefined', 'An error will occur'],
-      type: 'MCQs',
-      correctAnswers: ['Count: 0'],
-      score: 10,
-    },
-    {
-      question:
-        'In React, props are used to pass data from parent components to child components.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
-    },
-    {
-      question: 'What is the output of the following code snippet?',
-      image: CodeSnippet1,
-      choices: ['0', '1', '2', 'undefined'],
-      type: 'MCQs',
-      correctAnswers: ['0'],
-      score: 10,
-    },
-    {
-      question:
-        'Which of the following are valid ways to conditionally render content in React? (Select all that apply)',
-      choices: [
-        'Using the if-else statement',
-        'Using the ternary operator',
-        'Using the switch statement',
-        'Using the && operator',
-      ],
-      type: 'MAQs',
-      correctAnswers: [
-        'Using the if-else statement',
-        'Using the ternary operator',
-        'Using the && operator',
-      ],
-      score: 10,
-    },
-    {
-      question: 'In React, what is the purpose of keys in lists?',
-      choices: [
-        'To provide a unique identifier for each item in the list',
-        'To control the order of items in the list',
-        'To enable sorting and filtering of the list',
-        'To handle user interactions within the list',
+        '1940s and 1950s',
+        '1960s and 1970s',
+        '1980s and 1990s',
+        '2000s and 2010s',
       ],
       type: 'MCQs',
-      correctAnswers: ['To provide a unique identifier for each item in the list'],
-      score: 10,
+      correctAnswers: ['1960s and 1970s'],
+      score: 2,
     },
     {
-      question: 'What will be the result of the following React code?',
-      code: `import React from 'react';
-
-class Button extends React.Component {
-  handleClick() {
-    console.log('Button clicked');
-  }
-
-  render() {
-    return <button onClick={this.handleClick}>Click me</button>;
-  }
-}
-
-const App = () => {
-  return <Button />;
-};
-
-export default App;`,
+      question: 'According to the lecture, "re-orientation" is best described as:',
       choices: [
-        'The "Button clicked" message will be logged to the console when the button is clicked',
-        'The button will not respond to the click event',
-        'An error will occur due to the incorrect usage of onClick',
-        'The button will display but nothing will happen when clicked',
+        'A permanent ban on old traditions',
+        'A deliberate process of shifting or realigning direction, perspective, or priorities',
+        'A method of recruiting government workers',
+        'A type of irrigation technique',
       ],
       type: 'MCQs',
       correctAnswers: [
-        'The "Button clicked" message will be logged to the console when the button is clicked',
+        'A deliberate process of shifting or realigning direction, perspective, or priorities',
       ],
-      score: 10,
+      score: 2,
     },
     {
-      question: 'React uses a virtual DOM to optimize rendering performance.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
+      question: 'Which Nigerian administration is linked to the Green Revolution program in the lecture?',
+      choices: [
+        'Olusegun Obasanjo',
+        'Muhammadu Buhari',
+        'Shehu Shagari',
+        'Ibrahim Babangida',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Shehu Shagari'],
+      score: 2,
+    },
+    {
+      question: 'Which Nigerian president launched MAMSER?',
+      choices: [
+        'Shehu Shagari',
+        'Ibrahim Babangida',
+        'Olusegun Obasanjo',
+        'Sani Abacha',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Ibrahim Babangida'],
+      score: 2,
+    },
+    {
+      question: "National values are described in the lecture as guiding citizens' behaviour to foster which three things?",
+      choices: [
+        'Wealth, fame and power',
+        'Trade, tourism and industry',
+        'Unity, peace and development',
+        'Sports, arts and culture',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Unity, peace and development'],
+      score: 2,
+    },
+    {
+      question: 'Which of the following is listed in the lecture as an example of a moral value?',
+      choices: [
+        'Honesty',
+        'Wealth',
+        'Fame',
+        'Popularity',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Honesty'],
+      score: 2,
     },
   ],
 }

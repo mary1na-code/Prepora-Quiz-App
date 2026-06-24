@@ -30,9 +30,21 @@ export type Topic = {
   questions: Question[]
 }
 
+// function to automate questions count and total score calculation for each topic
+function prepareTopic(topic: Topic): Topic {
+  return {
+    ...topic,
+    totalQuestions: topic.questions.length,
+    totalScore: topic.questions.reduce(
+      (sum, question) => sum + question.score,
+      0
+    ),
+  }
+}
+
 export const quiz: Record<string, Topic> = {
-  'GST 112': gst112,
-  'GST 114': gst114,
-  'COS 112': python,
-  'COS 114': cos114,
+  'GST 112': prepareTopic(gst112),
+  'GST 114': prepareTopic(gst114),
+  'COS 112': prepareTopic(python),
+  'COS 114': prepareTopic(cos114),
 }
