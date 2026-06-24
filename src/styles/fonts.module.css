@@ -1,11 +1,10 @@
-/* woff2 : Super Modern Browsers */
-/* woff2 :Modern Browsers */
+/* Anek Malayalam for headings */
 
 @font-face {
   font-family: 'Anek Malayalam';
   font-style: normal;
   font-weight: 100;
-  src: url('../assets/fonts/anek-malayalam/anek-malayalam-v4-malayalam-100.woff')
+  src: url('../assets/fonts/anek-malayalam/anek-malayalam-v4-malayalam-100.woff2')
       format('woff2'),
     url('../assets/fonts/anek-malayalam/anek-malayalam-v4-malayalam-100.woff')
       format('woff');
@@ -88,3 +87,5 @@
       format('woff');
   font-display: swap;
 }
+
+

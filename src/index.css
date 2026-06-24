@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import 'tailwindcss';
 @import './styles/fonts.module.css';
 
@@ -8,9 +9,9 @@
   --color-secondary-text: #2d264b;
   --color-disabled-card: #fbf4ecbc;
   --color-select-topic-bg: #ffffff;
-  --color-theme-color: #800080;
+  --color-theme-color: #1E5FD8;
   --color-disabled-button: #e7e8e9;
-  --color-outline-button-text: #800080;
+  --color-outline-button-text: #1E5FD8;
   --color-button-text: #ffffff;
   --color-card-bg: #ffffff;
   --color-dark: #282526;
@@ -19,7 +20,7 @@
   --color-theme-text: #000000;
   --color-app-logo: #000000;
   --color-border: #eaeaea;
-  --color-selected-answer: #ffd6ff;
+  --color-selected-answer: #D6E9FF;
   --color-answer-bg: #ffffff;
   --color-info-text: #ff783f;
   --color-info-bg: #ffb23f26;
@@ -63,7 +64,7 @@
   --color-secondary-text: #ffffff;
   --color-disabled-card: #00000080;
   --color-select-topic-bg: #21191c;
-  --color-theme-color: #c000c0;
+  --color-theme-color: #6B9FFF;
   --color-disabled-button: #181214;
   --color-outline-button-text: #ffffff;
   --color-button-text: #000000;
@@ -87,7 +88,7 @@
 }
 
 @utility theme-gradient {
-  background: linear-gradient(to right, #800080, #ffc0cb);
+  background: linear-gradient(to right, #1E5FD8, #87CEEB);
 
   @variant dark {
     background: linear-gradient(90deg, #0e050e 0%, #281e20 100%);
@@ -102,18 +103,13 @@
   }
 }
 
-@utility button-background {
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
-
-  @variant dark {
-    background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
-  }
-}
-
 body {
   @apply text-theme-text background relative min-h-dvh overflow-x-hidden text-base;
 
-  font-family: 'Anek Malayalam', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   line-height: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anek Malayalam', serif; /* Headings */
 }
