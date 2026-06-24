@@ -26,7 +26,7 @@ export const quizTopics: QuizTopic[] = [
     icon: <JavaScript />,
   },
   {
-    title: 'COS 112',
+    title: 'Python',
     icon: <Python />,
   },
   {

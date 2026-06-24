@@ -11,8 +11,8 @@ import Mosque from '../../assets/images/mosque.jpg'
 import Place from '../../assets/images/place.jpg'
 import Reptile from '../../assets/images/reptile.jpg'
 
-export const generalKnowledge: Topic = {
-  topic: 'GeneralKnowledge',
+export const cos114: Topic = {
+  topic: 'cos114',
   level: 'Beginner',
   totalQuestions: 6,
   totalScore: 60,

@@ -1,7 +1,7 @@
-import { generalKnowledge } from './generalKnowledge'
-import { javascript } from './javascript'
+import { cos114 } from './cos-114'
+import { gst112 } from './gst-112'
+import { gst114 } from './gst-114'
 import { python } from './python'
-import { react } from './react'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -31,8 +31,8 @@ export type Topic = {
 }
 
 export const quiz: Record<string, Topic> = {
-  JavaScript: javascript,
-  React: react,
-  Python: python,
-  'General Knowledge': generalKnowledge,
+  'GST 112': gst112,
+  'GST 114': gst114,
+  'COS 112': python,
+  'COS 114': cos114,
 }

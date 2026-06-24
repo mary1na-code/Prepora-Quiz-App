@@ -5,8 +5,8 @@
 
 import { Topic } from '.'
 
-export const javascript: Topic = {
-  topic: 'Javascript',
+export const gst114: Topic = {
+  topic: 'GST 114',
   level: 'Beginner',
   totalQuestions: 14,
   totalScore: 125,
