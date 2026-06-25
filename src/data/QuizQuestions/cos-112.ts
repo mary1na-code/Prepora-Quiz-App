@@ -5,9 +5,9 @@
 
 import { Topic } from '.'
 
-export const python: Topic = {
-  topic: 'Python',
-  level: 'Advanced',
+export const cos112: Topic = {
+  topic: 'cos112',
+  level: 'null',
   totalQuestions: 14,
   totalScore: 125,
   totalTime: 360,

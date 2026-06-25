@@ -19,7 +19,7 @@ const QuizTopicsScreen: React.FC = () => {
   return (
     <PageCenter light justifyCenter>
       <CenterCardContainer>
-        <div className="text-app-logo mb-8 text-center md:mb-12">
+         <div className="text-app-logo mb-8 text-center md:mb-12">
           <AppLogo width={220} />
         </div>
         <h2 className="mb-5 text-center text-3xl font-bold">
