@@ -1,136 +1,449 @@
+// Question Types
+// 1. MCQs | Multiple Choice | single
+// 2. boolean | true/false | single
+// 3. MAQs | Multiple Answers | multiple
+
+// NOTE: The source material (a Google Form) did not include an answer key —
+// it only listed questions and choices. Answers below were derived from
+// general knowledge of Nigerian history/government and verified where needed.
+// Two are genuinely ambiguous given the answer options provided — check these
+// against your course's official answer key:
+//   - Q22 (military rule years 1966-1998): no option matches the historically
+//     precise ~28-29 years once you exclude the 1979-1983 civilian interregnum.
+//     Picked 32 (the literal 1998-1966 span) as the closest fit to the options given.
+//   - Q37 (economic disruption linked to the war): picked "The Monday sit-at-home
+//     movement" over "hyperinflation" - either could be the intended answer
+//     depending on how your lecturer framed it.
+
 import { Topic } from '.'
 
 export const gst112: Topic = {
-  topic: 'GST 112',
-  level: 'Easy',
-  totalQuestions: 11,
-  totalScore: 95,
-  totalTime: 600,
-
+  topic: 'gst112',
+  level: 'null',
+  totalQuestions: 40,
+  totalScore: 40,
+  totalTime: 1200, // estimate (20 min) - source form had no time limit, adjust as needed
   questions: [
     {
-      question: 'What does the acronym "OFN" stand for?',
-      choices: [
-        'Operation Feed the Nation',
-        'Office for National Development',
-        'Operation For Nigeria',
-        'Organization for Food and Nutrition',
-      ],
+      question:
+        'Which pre-colonial Nigerian society developed a centralized monarchical system with powerful city-states?',
+      choices: ['Igbo', 'Yoruba', 'Hausa', 'Aro'],
       type: 'MCQs',
-      correctAnswers: ['Operation Feed the Nation'],
-      score: 2,
+      correctAnswers: ['Hausa'],
+      score: 1,
     },
     {
-      question: 'What does "WAIC" stand for?',
-      choices: [
-        'Women Against Indiscipline and Crime',
-        'War Against Indiscipline and Corruption',
-        'West African Indiscipline Committee',
-        'Welfare Agency for Integrity and Conduct',
-      ],
+      question:
+        'What was the title of the king who held both political and religious authority in the pre-colonial Hausa political system?',
+      choices: ['Alaafin', 'Sarki', 'Emir', 'Waziri'],
       type: 'MCQs',
-      correctAnswers: ['War Against Indiscipline and Corruption'],
-      score: 2,
+      correctAnswers: ['Sarki'],
+      score: 1,
     },
     {
-      question: 'What does "MAMSER" stand for?',
+      question:
+        'In the pre-colonial Hausa political structure, which official served as the cavalry commander?',
+      choices: ['Galadima', 'Sarki', 'Madawaki', 'Waziri'],
+      type: 'MCQs',
+      correctAnswers: ['Madawaki'],
+      score: 1,
+    },
+    {
+      question:
+        'What was the role of the Waziri in the pre-colonial Hausa monarchical system?',
       choices: [
-        'Mass Mobilization for Self-Reliance, Social Justice and Economic Recovery',
-        'Ministry for Agriculture, Self-Reliance and Economic Reform',
-        'Mass Movement for Social Equality and Reform',
-        'Mobilization Agency for Manpower, Skills and Education Reform',
+        'Prime minister',
+        'Heir apparent',
+        'Cavalry commander',
+        'District Head',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Prime minister'],
+      score: 1,
+    },
+    {
+      question:
+        'Which of the following MOST heavily influenced the centralized structure of the pre-colonial Hausa states?',
+      choices: [
+        'The Aro Confederacy',
+        'Christian missionaries from Europe',
+        'The Ogboni secret society',
+        'Islamic governance and trans-Saharan trade',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Islamic governance and trans-Saharan trade'],
+      score: 1,
+    },
+    {
+      question:
+        'Which ethnic group developed a decentralized, republican system of government in pre-colonial Nigeria?',
+      choices: ['Fulani', 'Igbo', 'Hausa', 'Yoruba'],
+      type: 'MCQs',
+      correctAnswers: ['Igbo'],
+      score: 1,
+    },
+    {
+      question: 'How were decisions primarily reached in pre-colonial Igbo society?',
+      choices: [
+        'By the decree of a hereditary king',
+        'Through the rulings of the Oyo Mesi council',
+        'Through consensus among community members',
+        'Exclusively by the village oracle (Aro Confederacy)',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Through consensus among community members'],
+      score: 1,
+    },
+    {
+      question:
+        'Which institution provided regional judicial and economic coordination for the Igbo WITHOUT centralizing political power?',
+      choices: [
+        'The Ogboni Society',
+        'The Aro Confederacy',
+        'The Warrant Chiefs',
+        'The Nze and Ozo title societies',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['The Aro Confederacy'],
+      score: 1,
+    },
+    {
+      question:
+        'The pre-colonial Yoruba political system was primarily centered around which empire?',
+      choices: ['Sokoto Caliphate', 'Oyo Empire', 'Aro Confederacy', 'Benin Empire'],
+      type: 'MCQs',
+      correctAnswers: ['Oyo Empire'],
+      score: 1,
+    },
+    {
+      question:
+        'In the Yoruba political system, the power of the Alaafin was checked by a council of seven principal chiefs known as the:',
+      choices: ['Oyo Mesi', 'Ogboni', 'Nze and Ozo', 'Are-Ona-Kakanfo'],
+      type: 'MCQs',
+      correctAnswers: ['Oyo Mesi'],
+      score: 1,
+    },
+    {
+      question:
+        'Who served as the commander-in-chief of the army in the pre-colonial Yoruba (Oyo Empire) system?',
+      choices: ['Madawaki', 'Are-Ona-Kakanfo', 'Alaafin', 'Galadima'],
+      type: 'MCQs',
+      correctAnswers: ['Are-Ona-Kakanfo'],
+      score: 1,
+    },
+    {
+      question: 'Who initiated the policy of indirect rule in Nigeria?',
+      choices: [
+        'Queen Elizabeth II',
+        'Lord Lugard',
+        'Arthur Richards',
+        'John Macpherson',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Lord Lugard'],
+      score: 1,
+    },
+    {
+      question:
+        'What was the PRIMARY reason for the introduction of indirect rule in Nigeria?',
+      choices: [
+        'The desire to spread Christianity across Nigeria',
+        'Insufficient trained British personnel and limited financial resources',
+        'The formal request of traditional rulers for a governance framework',
+        'To prepare Nigeria for immediate independence',
       ],
       type: 'MCQs',
       correctAnswers: [
-        'Mass Mobilization for Self-Reliance, Social Justice and Economic Recovery',
+        'Insufficient trained British personnel and limited financial resources',
       ],
-      score: 2,
+      score: 1,
     },
     {
-      question: 'What does "NOA" stand for?',
+      question:
+        'Why did indirect rule succeed in Northern Nigeria but largely fail in the Southeast?',
       choices: [
-        'National Orientation Agency',
-        'Nigerian Organization for Agriculture',
-        'National Office of Administration',
-        'Nigerian Orientation Alliance',
-      ],
-      type: 'MCQs',
-      correctAnswers: ['National Orientation Agency'],
-      score: 2,
-    },
-    {
-      question: 'The Green Revolution refers to agricultural initiatives implemented mainly during which period?',
-      choices: [
-        '1940s and 1950s',
-        '1960s and 1970s',
-        '1980s and 1990s',
-        '2000s and 2010s',
-      ],
-      type: 'MCQs',
-      correctAnswers: ['1960s and 1970s'],
-      score: 2,
-    },
-    {
-      question: 'According to the lecture, "re-orientation" is best described as:',
-      choices: [
-        'A permanent ban on old traditions',
-        'A deliberate process of shifting or realigning direction, perspective, or priorities',
-        'A method of recruiting government workers',
-        'A type of irrigation technique',
+        'The North had no existing traditional rulers, making a clean start possible',
+        'Northern society was highly decentralized, matching the British model',
+        'Existing hierarchical governance and Islamic legal systems in the North were compatible with indirect rule',
+        'The British created Warrant Chiefs in the North who were widely accepted',
       ],
       type: 'MCQs',
       correctAnswers: [
-        'A deliberate process of shifting or realigning direction, perspective, or priorities',
+        'Existing hierarchical governance and Islamic legal systems in the North were compatible with indirect rule',
       ],
-      score: 2,
+      score: 1,
     },
     {
-      question: 'Which Nigerian administration is linked to the Green Revolution program in the lecture?',
+      question:
+        'What artificial authority did the British create in Southeastern Nigeria that caused widespread resentment among the Igbo?',
       choices: [
-        'Olusegun Obasanjo',
-        'Muhammadu Buhari',
-        'Shehu Shagari',
-        'Ibrahim Babangida',
+        'The Aro Confederacy',
+        'The Sarki system',
+        'Warrant Chiefs',
+        'District Heads',
       ],
       type: 'MCQs',
-      correctAnswers: ['Shehu Shagari'],
-      score: 2,
+      correctAnswers: ['Warrant Chiefs'],
+      score: 1,
     },
     {
-      question: 'Which Nigerian president launched MAMSER?',
+      question: 'Which Nigerian constitution FIRST introduced the elective principle?',
       choices: [
-        'Shehu Shagari',
-        'Ibrahim Babangida',
-        'Olusegun Obasanjo',
-        'Sani Abacha',
+        'Richard Constitution (1946)',
+        'Clifford Constitution (1922)',
+        'Macpherson Constitution (1951)',
+        'Lyttleton Constitution (1954)',
       ],
       type: 'MCQs',
-      correctAnswers: ['Ibrahim Babangida'],
-      score: 2,
+      correctAnswers: ['Clifford Constitution (1922)'],
+      score: 1,
     },
     {
-      question: "National values are described in the lecture as guiding citizens' behaviour to foster which three things?",
+      question:
+        'Under the Clifford Constitution (1922), elected representatives could come from which two locations?',
       choices: [
-        'Wealth, fame and power',
-        'Trade, tourism and industry',
-        'Unity, peace and development',
-        'Sports, arts and culture',
+        'Kano and Kaduna',
+        'Enugu and Port Harcourt',
+        'Lagos and Calabar',
+        'Ibadan and Lagos',
       ],
       type: 'MCQs',
-      correctAnswers: ['Unity, peace and development'],
-      score: 2,
+      correctAnswers: ['Lagos and Calabar'],
+      score: 1,
     },
     {
-      question: 'Which of the following is listed in the lecture as an example of a moral value?',
+      question:
+        'Which constitution formally divided Nigeria into THREE REGIONS (North, East, West)?',
       choices: [
-        'Honesty',
-        'Wealth',
-        'Fame',
-        'Popularity',
+        'Macpherson Constitution (1951)',
+        'Lyttleton Constitution (1954)',
+        'Richard Constitution (1946)',
+        'Clifford Constitution (1922)',
       ],
       type: 'MCQs',
-      correctAnswers: ['Honesty'],
-      score: 2,
+      correctAnswers: ['Richard Constitution (1946)'],
+      score: 1,
+    },
+    {
+      question:
+        'The central Legislative Council was replaced with a House of Representatives under which constitution?',
+      choices: [
+        'Lyttleton Constitution (1954)',
+        'Macpherson Constitution (1951)',
+        'Richard Constitution (1946)',
+        'Clifford Constitution (1922)',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Macpherson Constitution (1951)'],
+      score: 1,
+    },
+    {
+      question:
+        'Which constitution is credited with establishing TRUE FEDERALISM in Nigeria?',
+      choices: [
+        'Richard Constitution (1946)',
+        'Macpherson Constitution (1951)',
+        'Clifford Constitution (1922)',
+        'Lyttleton Constitution (1954)',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Lyttleton Constitution (1954)'],
+      score: 1,
+    },
+    {
+      question: 'In what year did the Northern Region obtain self-government?',
+      choices: ['1954', '1957', '1959', '1960'],
+      type: 'MCQs',
+      correctAnswers: ['1959'],
+      score: 1,
+    },
+    {
+      question:
+        'How many years in total did Nigeria experience military rule between 1966 and 1998?',
+      choices: ['16 years', '24 years', '32 years', '40 years'],
+      type: 'MCQs',
+      // NOTE: ambiguous - see file header comment.
+      correctAnswers: ['32 years'],
+      score: 1,
+    },
+    {
+      question: 'How many military coups occurred in Nigeria between 1966 and 1998?',
+      choices: ['Four', 'Six', 'Eight', 'Ten'],
+      type: 'MCQs',
+      correctAnswers: ['Six'],
+      score: 1,
+    },
+    {
+      question:
+        'The Nigerian Civil War (Biafran War) was fought between which years?',
+      choices: ['1960–1963', '1966–1969', '1967–1970', '1970–1973'],
+      type: 'MCQs',
+      correctAnswers: ['1967–1970'],
+      score: 1,
+    },
+    {
+      question: 'Approximately how many civilian deaths resulted from the Biafran War?',
+      choices: [
+        '100,000 – 300,000',
+        '500,000 – 3,000,000',
+        '4,000,000 – 5,000,000',
+        'Less than 50,000',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['500,000 – 3,000,000'],
+      score: 1,
+    },
+    {
+      question: 'How many ethnic groups does Nigeria currently have?',
+      choices: ['Exactly 100', 'Over 250', 'Around 150', 'Over 500'],
+      type: 'MCQs',
+      correctAnswers: ['Over 250'],
+      score: 1,
+    },
+    {
+      question:
+        'To acquire Nigerian citizenship by NATURALIZATION, a foreigner must have lived in Nigeria for up to how many years?',
+      choices: ['5 years', '10 years', '15 years', '20 years'],
+      type: 'MCQs',
+      correctAnswers: ['15 years'],
+      score: 1,
+    },
+    {
+      question:
+        'Which dimension of citizenship specifically involves patriotism and allegiance to the state?',
+      choices: ['Political', 'Social', 'Cultural', 'Economic'],
+      type: 'MCQs',
+      correctAnswers: ['Political'],
+      score: 1,
+    },
+    {
+      question:
+        'Which of the following is considered a CIVIC RESPONSIBILITY of Nigerian citizens?',
+      choices: [
+        'Receiving a monthly government salary',
+        'Paying taxes',
+        'Owning landed property',
+        'Belonging to a registered ethnic group',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Paying taxes'],
+      score: 1,
+    },
+    {
+      question: 'How many indigenous languages are there in Nigeria?',
+      choices: ['Over 100', 'Over 250', 'Over 500', 'Exactly 3'],
+      type: 'MCQs',
+      correctAnswers: ['Over 500'],
+      score: 1,
+    },
+    {
+      question:
+        'The Nilo-Saharan linguistic family is predominantly found in which part of Nigeria?',
+      choices: ['South', 'Middle Belt', 'Northeast', 'North'],
+      type: 'MCQs',
+      correctAnswers: ['Northeast'],
+      score: 1,
+    },
+    {
+      question: 'What is the official language of Nigeria?',
+      choices: ['Hausa', 'Yoruba', 'Igbo', 'English'],
+      type: 'MCQs',
+      correctAnswers: ['English'],
+      score: 1,
+    },
+    {
+      question:
+        'The Ogboni society in the pre-colonial Yoruba political system is best described as:',
+      choices: [
+        'A council of cavalry commanders responsible for military affairs',
+        "A powerful secret society of elders that helped check the king's power",
+        'The supreme judicial court that resolved land disputes',
+        'An age-grade institution for community labour mobilisation',
+      ],
+      type: 'MCQs',
+      correctAnswers: [
+        "A powerful secret society of elders that helped check the king's power",
+      ],
+      score: 1,
+    },
+    {
+      question:
+        'In the pre-colonial Igbo political system, the title societies were known as:',
+      choices: ['Oyo Mesi', 'Nze and Ozo', 'Madawaki', 'Alaafin'],
+      type: 'MCQs',
+      correctAnswers: ['Nze and Ozo'],
+      score: 1,
+    },
+    {
+      question:
+        'In the pre-colonial Hausa hierarchical structure, how did the Sarki relate to common people?',
+      choices: [
+        'Through direct democratic representation and open assemblies',
+        'Through the Oyo Mesi, which mediated between king and people',
+        'Through District Heads and Village Heads who formed a chain of command',
+        'Through the Aro Confederacy, which governed regional affairs',
+      ],
+      type: 'MCQs',
+      correctAnswers: [
+        'Through District Heads and Village Heads who formed a chain of command',
+      ],
+      score: 1,
+    },
+    {
+      question:
+        'A foreign woman married to an indigenous Nigerian man can acquire citizenship through which pathway?',
+      choices: ['Naturalization only', 'Ancestry', 'Registration', 'Birth'],
+      type: 'MCQs',
+      correctAnswers: ['Registration'],
+      score: 1,
+    },
+    {
+      question:
+        'Which of the following is an economic disruption in Southeastern Nigeria cited as a lingering consequence of the Biafran War?',
+      choices: [
+        'Hyperinflation caused by wartime currency printing',
+        'The Monday sit-at-home movement',
+        'The British creation of the Warrant Chiefs system',
+        'The colonial blockade of Lagos ports',
+      ],
+      type: 'MCQs',
+      // NOTE: ambiguous - see file header comment.
+      correctAnswers: ['The Monday sit-at-home movement'],
+      score: 1,
+    },
+    {
+      question:
+        'Which constitution created regional assemblies in ALL THREE regions (North, East, and West)?',
+      choices: [
+        'Macpherson Constitution (1951)',
+        'Clifford Constitution (1922)',
+        'Richard Constitution (1946)',
+        'Lyttleton Constitution (1954)',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Richard Constitution (1946)'],
+      score: 1,
+    },
+    {
+      question:
+        'During military rule in Nigeria, constitutional governance was replaced with which form of governing authority?',
+      choices: [
+        'Consensual democracy',
+        'Decrees',
+        'Regional assemblies',
+        'Traditional warrants',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['Decrees'],
+      score: 1,
+    },
+    {
+      question:
+        "Which of the following is NOT one of the three linguistic family groupings of Nigeria's indigenous languages?",
+      choices: ['Niger-Congo', 'Nilo-Saharan', 'Indo-European', 'Afro-Asiatic'],
+      type: 'MCQs',
+      correctAnswers: ['Indo-European'],
+      score: 1,
     },
   ],
 }
