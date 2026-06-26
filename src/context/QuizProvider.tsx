@@ -1,9 +1,9 @@
 import { ReactNode, useEffect, useRef, useState } from 'react'
 import { quiz } from '../data/QuizQuestions'
+import type { Question } from '../data/QuizQuestions'
 import {
   QuizContextTypes,
   QuizSession,
-  Question,
   Result,
   ScreenTypes,
 } from '../types'

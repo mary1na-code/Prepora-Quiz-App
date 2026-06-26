@@ -1,4 +1,4 @@
-import { FC, useEffect, useMemo, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { AppLogo, CheckIcon, Next, TimerIcon } from '../../config/icons'
 import { useQuiz } from '../../context/QuizContext'
 import { useTimer } from '../../hooks'
@@ -30,12 +30,11 @@ const QuestionScreen: FC = () => {
     setIsAnswered,
     isTimerPaused,
     setIsTimerPaused,
+    clearQuizSession,
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
   const { question, choices, code, image, correctAnswers, rationale } = currentQuestion
-
-  const hasStarted = useMemo(() => activeQuestion > 0 || selectedChoice !== null, [activeQuestion, selectedChoice])
 
   const getOptionClass = (choice: string) => {
     if (!isAnswered) return ''
@@ -81,6 +80,11 @@ const QuestionScreen: FC = () => {
 
   const handleBack = () => {
     setCurrentScreen(ScreenTypes.QuizDetailsScreen)
+  }
+
+  const cancelToHome = () => {
+    clearQuizSession()
+    setCurrentScreen(ScreenTypes.QuizTopicsScreen)
   }
 
   useEffect(() => {
