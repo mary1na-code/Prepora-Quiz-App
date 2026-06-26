@@ -34,6 +34,12 @@ const QuestionScreen: FC = () => {
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
+
+  // Guard against undefined if questions are empty or loading
+  if (!currentQuestion) {
+    return null
+  }
+
   const { question, choices, code, image, correctAnswers, rationale } = currentQuestion
 
   const getOptionClass = (choice: string) => {
@@ -92,6 +98,8 @@ const QuestionScreen: FC = () => {
   useEffect(() => {
     if (showTimerModal || showResultModal) {
       document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
     }
   }, [showTimerModal, showResultModal])
 
@@ -131,7 +139,9 @@ const QuestionScreen: FC = () => {
       <div className="text-app-logo mt-3 mb-5 text-center md:my-12">
         <AppLogo className="w-[185px] md:w-[270px]" />
       </div>
-      <div className="bg-card-bg relative mb-18 min-h-[500px] w-full rounded-sm p-4 pb-20 md:w-[900px] md:px-14 md:pt-8">
+
+      <div className="bg-card-bg relative mb-16 min-h-[500px] w-full rounded-sm p-4 pb-20 md:w-[900px] md:px-14 md:pt-8">
+        {/* Header */}
         <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <QuizHeader
             activeQuestion={activeQuestion}
@@ -139,15 +149,16 @@ const QuestionScreen: FC = () => {
             timer={timer}
           />
           <div className="flex flex-wrap items-center gap-3">
-            {/* <Button
+            <Button
               text={isTimerPaused ? 'Resume' : 'Pause'}
               onClick={handlePauseToggle}
               outline
               bold
             />
-            <Button text="Back" onClick={handleBack} outline bold /> */}
           </div>
         </div>
+
+        {/* Question */}
         <Question
           question={question}
           code={code}
@@ -160,13 +171,17 @@ const QuestionScreen: FC = () => {
           correctAnswers={correctAnswers}
           rationale={rationale}
         />
+
+        {/* Navigation Buttons */}
         <div className="mt-8 flex flex-col gap-3 rounded-lg border border-border bg-card-bg p-4 shadow-sm md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap items-center gap-3">
-            {activeQuestion > 0 && (
+            {activeQuestion === 0 ? (
+              <Button text="Cancel" onClick={cancelToHome} outline bold />
+            ) : (
               <Button text="Back" onClick={handleBack} outline bold />
             )}
-            <Button text="Cancel" onClick={cancelToHome} outline bold />
           </div>
+
           <div className="flex justify-end">
             <Button
               text={activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
@@ -179,6 +194,7 @@ const QuestionScreen: FC = () => {
         </div>
       </div>
 
+      {/* Modals */}
       {(showTimerModal || showResultModal) && (
         <ModalWrapper
           title={showResultModal ? 'Done!' : 'Your time is up!'}
