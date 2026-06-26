@@ -133,14 +133,22 @@ const QuestionScreen: FC = () => {
           correctAnswers={correctAnswers}
           rationale={rationale}
         />
-        <div className="absolute right-4 bottom-8 flex w-[90%] justify-end gap-5 md:right-15 md:w-auto md:justify-normal">
-          <Button
-            text={activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
-            onClick={onClickNext}
-            icon={<Next />}
-            iconPosition="right"
-            disabled={!isAnswered}
-          />
+        <div className="absolute right-4 bottom-8 flex w-[90%] flex-col gap-3 md:right-15 md:w-auto md:flex-row md:justify-between md:gap-5">
+          <div className="flex flex-wrap gap-3">
+            {activeQuestion > 0 && (
+              <Button text="Back" onClick={handleBack} outline bold />
+            )}
+            <Button text="Cancel" onClick={cancelToHome} outline bold />
+          </div>
+          <div className="flex justify-end">
+            <Button
+              text={activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
+              onClick={onClickNext}
+              icon={<Next />}
+              iconPosition="right"
+              disabled={!isAnswered}
+            />
+          </div>
         </div>
       </div>
 

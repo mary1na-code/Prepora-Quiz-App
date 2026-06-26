@@ -8,12 +8,17 @@ import HighlightedText from '../ui/HighlightedText'
 import PageCenter from '../ui/PageCenter'
 
 const QuizDetailsScreen = () => {
-  const { setCurrentScreen, quizDetails } = useQuiz()
+  const { setCurrentScreen, quizDetails, clearQuizSession } = useQuiz()
 
   const { selectedQuizTopic, totalQuestions, totalScore, totalTime } = quizDetails
 
   const goToQuestionScreen = () => {
     setCurrentScreen(ScreenTypes.QuestionScreen)
+  }
+
+  const cancelToHome = () => {
+    clearQuizSession()
+    setCurrentScreen(ScreenTypes.QuizTopicsScreen)
   }
 
   return (
@@ -23,7 +28,6 @@ const QuizDetailsScreen = () => {
           <AppLogo width={220} />
         </div>
 
-        {/* commented out the app's name  */}
         <h2 className="text-theme-color text-3xl font-bold">Attempt all Questions</h2>
 
         <div className="mt-4 mb-10 max-w-[500px] text-center text-xl font-medium">
@@ -43,13 +47,21 @@ const QuizDetailsScreen = () => {
           </p>
         </div>
 
-        <Button
-          text="Start"
-          icon={<StartIcon />}
-          iconPosition="left"
-          onClick={goToQuestionScreen}
-          bold
-        />
+        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <Button
+            text="Cancel"
+            outline
+            onClick={cancelToHome}
+            bold
+          />
+          <Button
+            text="Start"
+            icon={<StartIcon />}
+            iconPosition="left"
+            onClick={goToQuestionScreen}
+            bold
+          />
+        </div>
       </CenterCardContainer>
     </PageCenter>
   )
