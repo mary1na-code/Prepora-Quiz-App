@@ -5,7 +5,7 @@ export const cos114: Topic = {
   level: 'null',
   totalQuestions: 50,
   totalScore: 50,
-  totalTime: 3000, 
+  totalTime: 1800, 
   questions: [
     {
       question: 'Which of the following best describes the World Wide Web (WWW)?',
