@@ -5,7 +5,7 @@ export const cos118: Topic = {
   level: 'null',
   totalQuestions: 40,
   totalScore: 50,
-  totalTime: 1200, // estimate (20 min) - source had no time limit, adjust as needed
+  totalTime: 2400, // estimate (40 min) - source had no time limit, adjust as needed
   questions: [
     {
   question:
