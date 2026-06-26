@@ -139,13 +139,13 @@ const QuestionScreen: FC = () => {
             timer={timer}
           />
           <div className="flex flex-wrap items-center gap-3">
-            <Button
+            {/* <Button
               text={isTimerPaused ? 'Resume' : 'Pause'}
               onClick={handlePauseToggle}
               outline
               bold
             />
-            <Button text="Back" onClick={handleBack} outline bold />
+            <Button text="Back" onClick={handleBack} outline bold /> */}
           </div>
         </div>
         <Question
