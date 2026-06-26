@@ -13,10 +13,16 @@ function Main() {
   const { currentScreen, setCurrentScreen } = useQuiz()
 
   useEffect(() => {
-    setTimeout(() => {
+    if (currentScreen !== ScreenTypes.SplashScreen) {
+      return
+    }
+
+    const timeout = setTimeout(() => {
       setCurrentScreen(ScreenTypes.QuizTopicsScreen)
     }, 1000)
-  }, [setCurrentScreen])
+
+    return () => clearTimeout(timeout)
+  }, [setCurrentScreen, currentScreen])
 
   const screenComponents = {
     [ScreenTypes.SplashScreen]: <SplashScreen />,

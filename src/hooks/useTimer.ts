@@ -9,8 +9,9 @@ const useTimer = (
   quizDetails: QuizDetails,
   setEndTime: (time: number) => void,
   setTimer: Dispatch<SetStateAction<number>>,
-  setShowTimerModal: (time: boolean) => void,
-  showResultModal: boolean
+  setShowTimerModal: (value: boolean) => void,
+  showResultModal: boolean,
+  isPaused: boolean
 ) => {
   useEffect(() => {
     if (timer <= 0) {
@@ -22,13 +23,16 @@ const useTimer = (
   }, [timer, quizDetails.totalTime, setEndTime, setShowTimerModal, setTimer])
 
   useEffect(() => {
-    if (!showResultModal) {
-      const countTimer = setTimeout(() => {
-        setTimer((prevTimer) => prevTimer - 1)
-      }, 1000)
-      return () => clearTimeout(countTimer)
+    if (showResultModal || isPaused) {
+      return
     }
-  }, [timer, setTimer])
+
+    const countTimer = window.setTimeout(() => {
+      setTimer((prevTimer) => prevTimer - 1)
+    }, 1000)
+
+    return () => window.clearTimeout(countTimer)
+  }, [timer, setTimer, showResultModal, isPaused])
 }
 
 export default useTimer

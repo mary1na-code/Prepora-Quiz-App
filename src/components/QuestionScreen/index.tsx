@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useEffect, useMemo, useState } from 'react'
 import { AppLogo, CheckIcon, Next, TimerIcon } from '../../config/icons'
 import { useQuiz } from '../../context/QuizContext'
 import { useTimer } from '../../hooks'
@@ -10,9 +10,6 @@ import Question from './Question'
 import QuizHeader from './QuizHeader'
 
 const QuestionScreen: FC = () => {
-  const [activeQuestion, setActiveQuestion] = useState<number>(0)
-  const [selected, setSelected] = useState<string | null>(null)
-  const [isAnswered, setIsAnswered] = useState(false)
   const [showTimerModal, setShowTimerModal] = useState<boolean>(false)
   const [showResultModal, setShowResultModal] = useState<boolean>(false)
 
@@ -25,30 +22,41 @@ const QuestionScreen: FC = () => {
     timer,
     setTimer,
     setEndTime,
+    activeQuestion,
+    setActiveQuestion,
+    selectedChoice,
+    setSelectedChoice,
+    isAnswered,
+    setIsAnswered,
+    isTimerPaused,
+    setIsTimerPaused,
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
   const { question, choices, code, image, correctAnswers, rationale } = currentQuestion
 
+  const hasStarted = useMemo(() => activeQuestion > 0 || selectedChoice !== null, [activeQuestion, selectedChoice])
+
   const getOptionClass = (choice: string) => {
     if (!isAnswered) return ''
     const isCorrectChoice = correctAnswers.includes(choice)
-    const wasSelected = selected === choice
+    const wasSelected = selectedChoice === choice
     if (isCorrectChoice) return 'correct'
     if (wasSelected && !isCorrectChoice) return 'wrong'
     return ''
   }
 
   const onClickNext = () => {
-    const isMatch = selected !== null && correctAnswers.includes(selected)
-    const selectedAnswer = selected ? [selected] : []
+    const isMatch = selectedChoice !== null && correctAnswers.includes(selectedChoice)
+    const selectedAnswer = selectedChoice ? [selectedChoice] : []
 
     setResult([...result, { ...currentQuestion, selectedAnswer, isMatch }])
 
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1)
-      setSelected(null)
+      setSelectedChoice(null)
       setIsAnswered(false)
+      setIsTimerPaused(false)
     } else {
       const timeTaken = quizDetails.totalTime - timer
       setEndTime(timeTaken)
@@ -58,7 +66,7 @@ const QuestionScreen: FC = () => {
 
   const handleAnswerSelection = (choice: string) => {
     if (isAnswered) return
-    setSelected(choice)
+    setSelectedChoice(choice)
     setIsAnswered(true)
   }
 
@@ -67,15 +75,29 @@ const QuestionScreen: FC = () => {
     document.body.style.overflow = 'auto'
   }
 
-  // to prevent scrolling when modal is opened
+  const handlePauseToggle = () => {
+    setIsTimerPaused((prev) => !prev)
+  }
+
+  const handleBack = () => {
+    setCurrentScreen(ScreenTypes.QuizDetailsScreen)
+  }
+
   useEffect(() => {
     if (showTimerModal || showResultModal) {
       document.body.style.overflow = 'hidden'
     }
   }, [showTimerModal, showResultModal])
 
-  // timer hooks, handle conditions related to time
-  useTimer(timer, quizDetails, setEndTime, setTimer, setShowTimerModal, showResultModal)
+  useTimer(
+    timer,
+    quizDetails,
+    setEndTime,
+    setTimer,
+    setShowTimerModal,
+    showResultModal,
+    isTimerPaused,
+  )
 
   return (
     <PageCenter>
@@ -83,17 +105,28 @@ const QuestionScreen: FC = () => {
         <AppLogo className="w-[185px] md:w-[270px]" />
       </div>
       <div className="bg-card-bg relative mb-18 min-h-[500px] w-full rounded-sm p-4 pb-20 md:w-[900px] md:px-14 md:pt-8">
-        <QuizHeader
-          activeQuestion={activeQuestion}
-          totalQuestions={quizDetails.totalQuestions}
-          timer={timer}
-        />
+        <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <QuizHeader
+            activeQuestion={activeQuestion}
+            totalQuestions={quizDetails.totalQuestions}
+            timer={timer}
+          />
+          <div className="flex flex-wrap items-center gap-3">
+            <Button
+              text={isTimerPaused ? 'Resume' : 'Pause'}
+              onClick={handlePauseToggle}
+              outline
+              bold
+            />
+            <Button text="Back" onClick={handleBack} outline bold />
+          </div>
+        </div>
         <Question
           question={question}
           code={code}
           image={image}
           choices={choices}
-          selected={selected}
+          selected={selectedChoice}
           isAnswered={isAnswered}
           handleAnswerSelection={handleAnswerSelection}
           getOptionClass={getOptionClass}
@@ -106,12 +139,11 @@ const QuestionScreen: FC = () => {
             onClick={onClickNext}
             icon={<Next />}
             iconPosition="right"
-            disabled={selected === null}
+            disabled={!isAnswered}
           />
         </div>
       </div>
 
-      {/* timer or finish quiz modal*/}
       {(showTimerModal || showResultModal) && (
         <ModalWrapper
           title={showResultModal ? 'Done!' : 'Your time is up!'}

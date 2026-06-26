@@ -14,15 +14,27 @@ export interface Result extends Question {
   isMatch: boolean
 }
 
+export type QuizSession = {
+  currentScreen: ScreenTypes
+  quizTopic: string
+  result: Result[]
+  timer: number
+  endTime: number
+  activeQuestion: number
+  selectedChoice: string | null
+  isAnswered: boolean
+  isTimerPaused: boolean
+}
+
 export type QuizContextTypes = {
   currentScreen: ScreenTypes
   setCurrentScreen: Dispatch<SetStateAction<ScreenTypes>>
   quizTopic: string
   selectQuizTopic: (type: string) => void
   questions: Question[]
-  setQuestions: Dispatch<SetStateAction<any[]>>
+  setQuestions: Dispatch<SetStateAction<Question[]>>
   result: Result[]
-  setResult: Dispatch<SetStateAction<any[]>>
+  setResult: Dispatch<SetStateAction<Result[]>>
   timer: number
   setTimer: Dispatch<SetStateAction<number>>
   endTime: number
@@ -33,4 +45,13 @@ export type QuizContextTypes = {
     totalTime: number
     selectedQuizTopic: string
   }
+  activeQuestion: number
+  setActiveQuestion: Dispatch<SetStateAction<number>>
+  selectedChoice: string | null
+  setSelectedChoice: Dispatch<SetStateAction<string | null>>
+  isAnswered: boolean
+  setIsAnswered: Dispatch<SetStateAction<boolean>>
+  isTimerPaused: boolean
+  setIsTimerPaused: Dispatch<SetStateAction<boolean>>
+  clearQuizSession: () => void
 }

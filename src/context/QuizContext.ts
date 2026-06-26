@@ -20,6 +20,15 @@ export const initialState: QuizContextTypes = {
     totalTime: 0,
     selectedQuizTopic: 'GST 112',
   },
+  activeQuestion: 0,
+  setActiveQuestion: () => {},
+  selectedChoice: null,
+  setSelectedChoice: () => {},
+  isAnswered: false,
+  setIsAnswered: () => {},
+  isTimerPaused: false,
+  setIsTimerPaused: () => {},
+  clearQuizSession: () => {},
 }
 
 export const QuizContext = createContext<QuizContextTypes>(initialState)

@@ -10,10 +10,10 @@ import QuizImage from '../ui/QuizImage'
 import ResultOverview from './ResultOverview'
 
 const ResultScreen: FC = () => {
-  const { result } = useQuiz()
+  const { result, clearQuizSession } = useQuiz()
 
   const onClickRetry = () => {
-    refreshPage()
+    clearQuizSession()
   }
 
   return (
