@@ -79,7 +79,9 @@ const QuestionScreen: FC = () => {
   }
 
   const handleBack = () => {
-    setCurrentScreen(ScreenTypes.QuizDetailsScreen)
+    setActiveQuestion((prev) => Math.max(prev - 1, 0))
+    setSelectedChoice(null)
+    setIsAnswered(false)
   }
 
   const cancelToHome = () => {
@@ -92,6 +94,27 @@ const QuestionScreen: FC = () => {
       document.body.style.overflow = 'hidden'
     }
   }, [showTimerModal, showResultModal])
+
+  useEffect(() => {
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      if (activeQuestion > 0 || isAnswered) {
+        event.preventDefault()
+        event.returnValue = 'You will lose your progress if you reload the page.'
+      }
+    }
+
+    const handleUnload = () => {
+      window.localStorage.removeItem('prepora_quiz_session')
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    window.addEventListener('unload', handleUnload)
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload)
+      window.removeEventListener('unload', handleUnload)
+    }
+  }, [activeQuestion, isAnswered])
 
   useTimer(
     timer,
@@ -137,8 +160,8 @@ const QuestionScreen: FC = () => {
           correctAnswers={correctAnswers}
           rationale={rationale}
         />
-        <div className="absolute right-4 bottom-8 flex w-[90%] flex-col gap-3 md:right-15 md:w-auto md:flex-row md:justify-between md:gap-5">
-          <div className="flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-col gap-3 rounded-lg border border-border bg-card-bg p-4 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-wrap items-center gap-3">
             {activeQuestion > 0 && (
               <Button text="Back" onClick={handleBack} outline bold />
             )}
