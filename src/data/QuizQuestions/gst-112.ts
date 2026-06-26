@@ -31,7 +31,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Hausa'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Hausa".',},
     {
       question:
         'What was the title of the king who held both political and religious authority in the pre-colonial Hausa political system?',
@@ -39,7 +40,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Sarki'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Sarki".',},
     {
       question:
         'In the pre-colonial Hausa political structure, which official served as the cavalry commander?',
@@ -47,7 +49,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Madawaki'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Madawaki".',},
     {
       question:
         'What was the role of the Waziri in the pre-colonial Hausa monarchical system?',
@@ -60,7 +63,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Prime minister'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Prime minister".',},
     {
       question:
         'Which of the following MOST heavily influenced the centralized structure of the pre-colonial Hausa states?',
@@ -73,7 +77,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Islamic governance and trans-Saharan trade'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Islamic governance and trans-Saharan trade".',},
     {
       question:
         'Which ethnic group developed a decentralized, republican system of government in pre-colonial Nigeria?',
@@ -81,7 +86,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Igbo'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Igbo".',},
     {
       question: 'How were decisions primarily reached in pre-colonial Igbo society?',
       choices: [
@@ -93,7 +99,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Through consensus among community members'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Through consensus among community members".',},
     {
       question:
         'Which institution provided regional judicial and economic coordination for the Igbo WITHOUT centralizing political power?',
@@ -106,7 +113,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['The Aro Confederacy'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "The Aro Confederacy".',},
     {
       question:
         'The pre-colonial Yoruba political system was primarily centered around which empire?',
@@ -114,7 +122,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Oyo Empire'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Oyo Empire".',},
     {
       question:
         'In the Yoruba political system, the power of the Alaafin was checked by a council of seven principal chiefs known as the:',
@@ -122,7 +131,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Oyo Mesi'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Oyo Mesi".',},
     {
       question:
         'Who served as the commander-in-chief of the army in the pre-colonial Yoruba (Oyo Empire) system?',
@@ -130,7 +140,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Are-Ona-Kakanfo'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Are-Ona-Kakanfo".',},
     {
       question: 'Who initiated the policy of indirect rule in Nigeria?',
       choices: [
@@ -142,7 +153,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Lord Lugard'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Lord Lugard".',},
     {
       question:
         'What was the PRIMARY reason for the introduction of indirect rule in Nigeria?',
@@ -157,7 +169,8 @@ export const gst112: Topic = {
         'Insufficient trained British personnel and limited financial resources',
       ],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Insufficient trained British personnel and limited financial resources".',},
     {
       question:
         'Why did indirect rule succeed in Northern Nigeria but largely fail in the Southeast?',
@@ -172,7 +185,8 @@ export const gst112: Topic = {
         'Existing hierarchical governance and Islamic legal systems in the North were compatible with indirect rule',
       ],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Existing hierarchical governance and Islamic legal systems in the North were compatible with indirect rule".',},
     {
       question:
         'What artificial authority did the British create in Southeastern Nigeria that caused widespread resentment among the Igbo?',
@@ -185,7 +199,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Warrant Chiefs'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Warrant Chiefs".',},
     {
       question: 'Which Nigerian constitution FIRST introduced the elective principle?',
       choices: [
@@ -197,7 +212,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Clifford Constitution (1922)'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Clifford Constitution (1922)".',},
     {
       question:
         'Under the Clifford Constitution (1922), elected representatives could come from which two locations?',
@@ -210,7 +226,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Lagos and Calabar'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Lagos and Calabar".',},
     {
       question:
         'Which constitution formally divided Nigeria into THREE REGIONS (North, East, West)?',
@@ -223,7 +240,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Richard Constitution (1946)'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Richard Constitution (1946)".',},
     {
       question:
         'The central Legislative Council was replaced with a House of Representatives under which constitution?',
@@ -236,7 +254,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Macpherson Constitution (1951)'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Macpherson Constitution (1951)".',},
     {
       question:
         'Which constitution is credited with establishing TRUE FEDERALISM in Nigeria?',
@@ -249,14 +268,16 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Lyttleton Constitution (1954)'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Lyttleton Constitution (1954)".',},
     {
       question: 'In what year did the Northern Region obtain self-government?',
       choices: ['1954', '1957', '1959', '1960'],
       type: 'MCQs',
       correctAnswers: ['1959'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "1959".',},
     {
       question:
         'How many years in total did Nigeria experience military rule between 1966 and 1998?',
@@ -265,14 +286,16 @@ export const gst112: Topic = {
       // NOTE: ambiguous - see file header comment.
       correctAnswers: ['32 years'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "32 years".',},
     {
       question: 'How many military coups occurred in Nigeria between 1966 and 1998?',
       choices: ['Four', 'Six', 'Eight', 'Ten'],
       type: 'MCQs',
       correctAnswers: ['Six'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Six".',},
     {
       question:
         'The Nigerian Civil War (Biafran War) was fought between which years?',
@@ -280,7 +303,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['1967–1970'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "1967–1970".',},
     {
       question: 'Approximately how many civilian deaths resulted from the Biafran War?',
       choices: [
@@ -292,14 +316,16 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['500,000 – 3,000,000'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "500,000 – 3,000,000".',},
     {
       question: 'How many ethnic groups does Nigeria currently have?',
       choices: ['Exactly 100', 'Over 250', 'Around 150', 'Over 500'],
       type: 'MCQs',
       correctAnswers: ['Over 250'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Over 250".',},
     {
       question:
         'To acquire Nigerian citizenship by NATURALIZATION, a foreigner must have lived in Nigeria for up to how many years?',
@@ -307,7 +333,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['15 years'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "15 years".',},
     {
       question:
         'Which dimension of citizenship specifically involves patriotism and allegiance to the state?',
@@ -315,7 +342,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Political'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Political".',},
     {
       question:
         'Which of the following is considered a CIVIC RESPONSIBILITY of Nigerian citizens?',
@@ -328,14 +356,16 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Paying taxes'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Paying taxes".',},
     {
       question: 'How many indigenous languages are there in Nigeria?',
       choices: ['Over 100', 'Over 250', 'Over 500', 'Exactly 3'],
       type: 'MCQs',
       correctAnswers: ['Over 500'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Over 500".',},
     {
       question:
         'The Nilo-Saharan linguistic family is predominantly found in which part of Nigeria?',
@@ -343,14 +373,16 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Northeast'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Northeast".',},
     {
       question: 'What is the official language of Nigeria?',
       choices: ['Hausa', 'Yoruba', 'Igbo', 'English'],
       type: 'MCQs',
       correctAnswers: ['English'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "English".',},
     {
       question:
         'The Ogboni society in the pre-colonial Yoruba political system is best described as:',
@@ -365,7 +397,8 @@ export const gst112: Topic = {
         "A powerful secret society of elders that helped check the king's power",
       ],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "A powerful secret society of elders that helped check the king".',},
     {
       question:
         'In the pre-colonial Igbo political system, the title societies were known as:',
@@ -373,7 +406,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Nze and Ozo'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Nze and Ozo".',},
     {
       question:
         'In the pre-colonial Hausa hierarchical structure, how did the Sarki relate to common people?',
@@ -388,7 +422,8 @@ export const gst112: Topic = {
         'Through District Heads and Village Heads who formed a chain of command',
       ],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Through District Heads and Village Heads who formed a chain of command".',},
     {
       question:
         'A foreign woman married to an indigenous Nigerian man can acquire citizenship through which pathway?',
@@ -396,7 +431,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Registration'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Registration".',},
     {
       question:
         'Which of the following is an economic disruption in Southeastern Nigeria cited as a lingering consequence of the Biafran War?',
@@ -410,7 +446,8 @@ export const gst112: Topic = {
       // NOTE: ambiguous - see file header comment.
       correctAnswers: ['The Monday sit-at-home movement'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "The Monday sit-at-home movement".',},
     {
       question:
         'Which constitution created regional assemblies in ALL THREE regions (North, East, and West)?',
@@ -423,7 +460,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Richard Constitution (1946)'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Richard Constitution (1946)".',},
     {
       question:
         'During military rule in Nigeria, constitutional governance was replaced with which form of governing authority?',
@@ -436,7 +474,8 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Decrees'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Decrees".',},
     {
       question:
         "Which of the following is NOT one of the three linguistic family groupings of Nigeria's indigenous languages?",
@@ -444,6 +483,7 @@ export const gst112: Topic = {
       type: 'MCQs',
       correctAnswers: ['Indo-European'],
       score: 1,
-    },
+    
+      rationale: 'The correct answer is "Indo-European".',},
   ],
 }

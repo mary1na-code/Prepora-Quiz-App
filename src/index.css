@@ -103,6 +103,18 @@
   }
 }
 
+.rationale-correct {
+  border-color: green;
+  background: #e6f4ea;
+  color: green;
+}
+
+.rationale-wrong {
+  border-color: red;
+  background: #fdecea;
+  color: red;
+}
+
 body {
   @apply text-theme-text background relative min-h-dvh overflow-x-hidden text-base;
 

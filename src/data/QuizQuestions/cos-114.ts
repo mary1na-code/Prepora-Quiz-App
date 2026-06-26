@@ -25,7 +25,8 @@ export const cos114: Topic = {
       type: 'MCQs',
       correctAnswers: ['Turtle'],
       score: 10,
-    },
+    
+      rationale: 'The correct answer is "Turtle".',},
     {
       question: 'In which country is this historical place located?',
       image: Place,
@@ -33,7 +34,8 @@ export const cos114: Topic = {
       type: 'MCQs',
       correctAnswers: ['China'],
       score: 10,
-    },
+    
+      rationale: 'The correct answer is "China".',},
     {
       question: 'This is a famous Pakistani dish. What is the name of this dish?',
       image: Dish,
@@ -41,7 +43,8 @@ export const cos114: Topic = {
       type: 'MCQs',
       correctAnswers: ['Biryani'],
       score: 10,
-    },
+    
+      rationale: 'The correct answer is "Biryani".',},
     {
       question: 'Which famous car is this?',
       image: Car,
@@ -49,7 +52,8 @@ export const cos114: Topic = {
       type: 'MCQs',
       correctAnswers: ['Mercedes'],
       score: 10,
-    },
+    
+      rationale: 'The correct answer is "Mercedes".',},
     {
       question: 'To which renowned automobile brand does this logo belong?',
       image: BrandLogo,
@@ -57,7 +61,8 @@ export const cos114: Topic = {
       type: 'MCQs',
       correctAnswers: ['Tesla'],
       score: 10,
-    },
+    
+      rationale: 'The correct answer is "Tesla".',},
     {
       question: 'Do you recognize this iconic mosque? If so, where is it situated?',
       image: Mosque,
@@ -71,6 +76,7 @@ export const cos114: Topic = {
       type: 'MCQs',
       correctAnswers: ['Faisal Mosque, Islamabad'],
       score: 10,
-    },
+    
+      rationale: 'The correct answer is "Faisal Mosque, Islamabad".',},
   ],
 }

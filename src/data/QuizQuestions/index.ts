@@ -1,12 +1,11 @@
 import { cos114 } from './cos-114'
+import { cos112 } from './cos-112'
 import { gst112 } from './gst-112'
 import { gst114 } from './gst-114'
-import { python } from './python'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
 // 2. boolean | true/false | single
-// 3. MAQs | Multiple Answers | multiple
 
 type Choice = string
 type CorrectAnswers = string[]
@@ -14,9 +13,10 @@ type CorrectAnswers = string[]
 export type Question = {
   question: string
   choices: Choice[]
-  type: 'MCQs' | 'MAQs' | 'boolean'
+  type: 'MCQs' | 'boolean'
   correctAnswers: CorrectAnswers
   score: number
+  rationale: string
   code?: string
   image?: string
 }
@@ -45,6 +45,6 @@ function prepareTopic(topic: Topic): Topic {
 export const quiz: Record<string, Topic> = {
   'GST 112': prepareTopic(gst112),
   'GST 114': prepareTopic(gst114),
-  'COS 112': prepareTopic(python),
+  'COS 112': prepareTopic(cos112),
   'COS 114': prepareTopic(cos114),
 }

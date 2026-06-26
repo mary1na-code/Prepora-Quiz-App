@@ -11,7 +11,8 @@ import QuizHeader from './QuizHeader'
 
 const QuestionScreen: FC = () => {
   const [activeQuestion, setActiveQuestion] = useState<number>(0)
-  const [selectedAnswer, setSelectedAnswer] = useState<string[]>([])
+  const [selected, setSelected] = useState<string | null>(null)
+  const [isAnswered, setIsAnswered] = useState(false)
   const [showTimerModal, setShowTimerModal] = useState<boolean>(false)
   const [showResultModal, setShowResultModal] = useState<boolean>(false)
 
@@ -27,46 +28,38 @@ const QuestionScreen: FC = () => {
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
+  const { question, choices, code, image, correctAnswers, rationale } = currentQuestion
 
-  const { question, type, choices, code, image, correctAnswers } = currentQuestion
+  const getOptionClass = (choice: string) => {
+    if (!isAnswered) return ''
+    const isCorrectChoice = correctAnswers.includes(choice)
+    const wasSelected = selected === choice
+    if (isCorrectChoice) return 'correct'
+    if (wasSelected && !isCorrectChoice) return 'wrong'
+    return ''
+  }
 
   const onClickNext = () => {
-    const isMatch: boolean =
-      selectedAnswer.length === correctAnswers.length &&
-      selectedAnswer.every((answer) => correctAnswers.includes(answer))
+    const isMatch = selected !== null && correctAnswers.includes(selected)
+    const selectedAnswer = selected ? [selected] : []
 
-    // adding selected answer, and if answer matches key to result array with current question
     setResult([...result, { ...currentQuestion, selectedAnswer, isMatch }])
 
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1)
+      setSelected(null)
+      setIsAnswered(false)
     } else {
-      // how long does it take to finish the quiz
       const timeTaken = quizDetails.totalTime - timer
       setEndTime(timeTaken)
       setShowResultModal(true)
     }
-    setSelectedAnswer([])
   }
 
-  const handleAnswerSelection = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, checked } = e.target
-
-    if (type === 'MAQs') {
-      if (selectedAnswer.includes(name)) {
-        setSelectedAnswer((prevSelectedAnswer) =>
-          prevSelectedAnswer.filter((element) => element !== name)
-        )
-      } else {
-        setSelectedAnswer((prevSelectedAnswer) => [...prevSelectedAnswer, name])
-      }
-    }
-
-    if (type === 'MCQs' || type === 'boolean') {
-      if (checked) {
-        setSelectedAnswer([name])
-      }
-    }
+  const handleAnswerSelection = (choice: string) => {
+    if (isAnswered) return
+    setSelected(choice)
+    setIsAnswered(true)
   }
 
   const handleModal = () => {
@@ -100,9 +93,12 @@ const QuestionScreen: FC = () => {
           code={code}
           image={image}
           choices={choices}
-          type={type}
+          selected={selected}
+          isAnswered={isAnswered}
           handleAnswerSelection={handleAnswerSelection}
-          selectedAnswer={selectedAnswer}
+          getOptionClass={getOptionClass}
+          correctAnswers={correctAnswers}
+          rationale={rationale}
         />
         <div className="absolute right-4 bottom-8 flex w-[90%] justify-end gap-5 md:right-15 md:w-auto md:justify-normal">
           <Button
@@ -110,7 +106,7 @@ const QuestionScreen: FC = () => {
             onClick={onClickNext}
             icon={<Next />}
             iconPosition="right"
-            disabled={selectedAnswer.length === 0}
+            disabled={selected === null}
           />
         </div>
       </div>

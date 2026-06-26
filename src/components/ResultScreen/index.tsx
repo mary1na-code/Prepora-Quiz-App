@@ -8,7 +8,6 @@ import CodeSnippet from '../ui/CodeSnippet'
 import Flex from '../ui/Flex'
 import QuizImage from '../ui/QuizImage'
 import ResultOverview from './ResultOverview'
-import RightAnswer from './RightAnswer'
 
 const ResultScreen: FC = () => {
   const { result } = useQuiz()
@@ -35,6 +34,7 @@ const ResultScreen: FC = () => {
               selectedAnswer,
               score,
               isMatch,
+              rationale,
             },
             index: number,
           ) => {
@@ -55,7 +55,6 @@ const ResultScreen: FC = () => {
                     {image && <QuizImage image={image} />}
                     <ul>
                       {choices.map((ans: string, index: number) => {
-                        // Convert index to alphabet character
                         const label = String.fromCharCode(65 + index)
                         const correct =
                           selectedAnswer.includes(ans) && correctAnswers.includes(ans)
@@ -77,10 +76,7 @@ const ResultScreen: FC = () => {
                         )
                       })}
                     </ul>
-                    {/* only show if the answer is wrong */}
-                    {!isMatch && (
-                      <RightAnswer correctAnswers={correctAnswers} choices={choices} />
-                    )}
+                    <p className="text-secondary-text mt-4 text-lg leading-[1.4]">{rationale}</p>
                   </div>
                 </div>
                 <span
