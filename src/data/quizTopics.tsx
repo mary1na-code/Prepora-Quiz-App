@@ -41,7 +41,7 @@ export const quizTopics: QuizTopic[] = [
   {
     title: 'COS 118',
     // icon: <Angular />,
-    disabled: true,
+    disabled: false,
   },
   {
     title: 'MTH 102',
