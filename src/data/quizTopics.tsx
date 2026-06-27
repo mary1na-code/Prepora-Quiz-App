@@ -36,10 +36,15 @@ export const quizTopics: QuizTopic[] = [
   {
     title: 'COS 116',
     // icon: <Gatsby />,
-    disabled: true,
+    disabled: false,
   },
   {
-    title: 'COS 118',
+    title: 'COS 118 (Wk1-4)',
+    // icon: <Angular />,
+    disabled: false,
+  },
+  {
+    title: 'COS 118 (Wk5-12)',
     // icon: <Angular />,
     disabled: false,
   },

@@ -1,0 +1,12 @@
+import { Topic } from '.'
+
+export const cos118_2: Topic = {
+  topic: 'COS 118_2 - Gen Ai',
+  level: 'null',
+  totalQuestions: 40,
+  totalScore: 50,
+  totalTime: 2400, // estimate (40 min) - source had no time limit, adjust as needed
+  questions: [
+
+  ]
+}
