@@ -9,6 +9,21 @@ export const cos118: Topic = {
   questions: [
     {
   question:
+    'What five elements make up an effective academic prompt structure?',
+  choices: [
+    'Topic + Length + Tone + Source + Format',
+    'Task + Context + Format + Constraints + Tone',
+    'Context + Examples + Code + Output + Limits',
+    'Question + Hypothesis + Data + Method + Conclusion',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Task + Context + Format + Constraints + Tone'],
+  score: 1,
+  rationale:
+    'B. Task + Context + Format + Constraints + Tone.\n\nAn effective academic prompt clearly defines the task, provides context, specifies the desired format, sets constraints, and indicates the preferred tone for the response.',
+},
+    {
+  question:
     'How do modern diffusion-based image generation models typically create realistic images?',
   choices: [
     'By copying images directly from the internet',
@@ -199,26 +214,6 @@ export const cos118: Topic = {
 },
 {
   question:
-    'Which tool is the industry leader for ultra-realistic voice synthesis with emotion control, e.g. for an audiobook?',
-  choices: ['AIVA', 'Pika Labs', 'ElevenLabs', 'Suno AI'],
-  type: 'MCQs',
-  correctAnswers: ['ElevenLabs'],
-  score: 1,
-  rationale:
-    'C. ElevenLabs.\n\nElevenLabs produces highly realistic AI voices with natural emotion, making it suitable for audiobooks, narration, and professional voice-over projects.',
-},
-{
-  question:
-    'Which AI tool is used by game studios and film composers to create orchestral and cinematic music?',
-  choices: ['Murf.ai', 'HeyGen', 'Udio', 'AIVA'],
-  type: 'MCQs',
-  correctAnswers: ['AIVA'],
-  score: 1,
-  rationale:
-    'D. AIVA.\n\nAIVA specializes in composing orchestral and cinematic music, making it popular for films, games, advertisements, and other creative productions.',
-},
-{
-  question:
     'Voice cloning needs only a short audio sample. What major ethical risk does this create?',
   choices: [
     'Loss of video quality',
@@ -280,21 +275,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     'C. Verify the source using trusted academic databases.\n\nAI-generated citations should always be checked against trusted academic databases to confirm that the source exists and the citation details are accurate.',
-},
-{
-  question:
-    'An AI-generated citation cannot be found in any library database. What should you do?',
-  choices: [
-    'Paraphrase the citation into a different form',
-    'Ask the AI to regenerate it',
-    'Delete it and find a real source',
-    'Keep it but add an AI disclaimer',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Delete it and find a real source'],
-  score: 1,
-  rationale:
-    'C. Delete it and find a real source.\n\nIf a citation cannot be verified in a trusted academic source, it should not be used. Replace it with a genuine, verifiable reference.',
 },
 {
   question:
@@ -404,38 +384,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     'D. Using AI to bypass the learning process or submitting its output as your own work.\n\nAI should support learning, not replace it. Presenting AI-generated work as your own without meaningful contribution undermines academic integrity.',
-},
-{
-  question:
-    'According to academic integrity principles, what is the most appropriate role of Generative AI in a student\'s learning process?',
-  choices: [
-    'Writing the complete assignment on the student\'s behalf',
-    'Creating research data that was never collected',
-    'Supporting learning while the student\'s own analysis and critical thinking remain original',
-    'Copying references from subscription-only journals',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'Supporting learning while the student\'s own analysis and critical thinking remain original',
-  ],
-  score: 1,
-  rationale:
-    'C. Supporting learning while the student\'s own analysis and critical thinking remain original.\n\nGenerative AI is most effective as a learning assistant that helps students understand concepts, organize ideas, and improve their work while preserving their own critical thinking.',
-},
-{
-  question:
-    'What five elements make up an effective academic prompt structure?',
-  choices: [
-    'Topic + Length + Tone + Source + Format',
-    'Task + Context + Format + Constraints + Tone',
-    'Context + Examples + Code + Output + Limits',
-    'Question + Hypothesis + Data + Method + Conclusion',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Task + Context + Format + Constraints + Tone'],
-  score: 1,
-  rationale:
-    'B. Task + Context + Format + Constraints + Tone.\n\nAn effective academic prompt clearly defines the task, provides context, specifies the desired format, sets constraints, and indicates the preferred tone for the response.',
 },
 {
   question:
@@ -674,38 +622,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     'B. They can be used to deceive people through realistic fake media.\n\nDeepfakes can create convincing fake videos or audio that damage reputations, spread misinformation, influence public opinion, or enable financial scams.',
-},
-{
-  question:
-    'Why does the module recommend tools such as Adobe Firefly for commercial creative work?',
-  choices: [
-    'They generate the highest-resolution images available',
-    'They are trained primarily on licensed and public-domain content',
-    'They only create vector graphics',
-    'They require no internet connection',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['They are trained primarily on licensed and public-domain content'],
-  score: 1,
-  rationale:
-    'B. They are trained primarily on licensed and public-domain content.\n\nUsing licensed and public-domain training data reduces the risk of copyright infringement, making the generated content safer for commercial use.',
-},
-{
-  question:
-    'Which action best demonstrates responsible AI use in university assignments?',
-  choices: [
-    'Submitting AI-generated work without changes',
-    'Using AI for brainstorming, then fact-checking and adding your own analysis',
-    'Removing all references to AI assistance',
-    'Copying AI-generated citations without verification',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'Using AI for brainstorming, then fact-checking and adding your own analysis',
-  ],
-  score: 1,
-  rationale:
-    'B. Using AI for brainstorming, then fact-checking and adding your own analysis.\n\nResponsible AI use means using AI as a learning aid while ensuring the final work reflects your own understanding, analysis, and verified information.',
 },
 {
   question:
