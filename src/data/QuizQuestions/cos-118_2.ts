@@ -1,7 +1,7 @@
 import { Topic } from '.'
 
 export const cos118_2: Topic = {
-  topic: 'COS 118_2 - Gen Ai',
+  topic: 'COS 118-2nd quiz - Gen Ai',
   level: 'null',
   totalQuestions: 40,
   totalScore: 50,

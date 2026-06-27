@@ -39,15 +39,15 @@ export const quizTopics: QuizTopic[] = [
     disabled: false,
   },
   {
-    title: 'COS 118 (Wk1-4)',
+    title: 'COS 118',
     // icon: <Angular />,
     disabled: false,
   },
-  {
-    title: 'COS 118 (Wk5-12)',
-    // icon: <Angular />,
-    disabled: false,
-  },
+  // {
+  //   title: 'COS 118-2nd quiz',
+  //   // icon: <Angular />,
+  //   disabled: false,
+  // },
   {
     title: 'MTH 102',
     // icon: <Django />,
