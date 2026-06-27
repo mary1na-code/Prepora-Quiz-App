@@ -1065,15 +1065,6 @@ export const cos118: Topic = {
     'B. Bard (PaLM).\n\nGoogle rebranded its Bard AI assistant as Gemini while expanding its capabilities with more advanced AI models.',
 },
 {
-  question: 'Who developed Gemini?',
-  choices: ['OpenAI', 'Anthropic', 'Google', 'Meta'],
-  type: 'MCQs',
-  correctAnswers: ['Google'],
-  score: 1,
-  rationale:
-    "C. Google.\n\nGemini is Google's family of multimodal AI models designed to understand and generate text, images, audio, and other forms of information.",
-},
-{
   question: 'Which feature is Gemini particularly known for?',
   choices: [
     'Running completely offline',
@@ -1100,38 +1091,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     "A. The art and science of crafting prompts to guide Generative AI.\n\nPrompt Engineering involves designing clear and effective prompts that help AI generate accurate, relevant, and useful responses.",
-},
-{
-  question:
-    'Which formula best describes Prompt Engineering?',
-  choices: [
-    'Prompt = Question + Answer',
-    'Prompt Engineering = Clear Instruction + Context + Constraints + Examples',
-    'AI = Data + Internet',
-    'Prompt = Keywords + Images',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'Prompt Engineering = Clear Instruction + Context + Constraints + Examples',
-  ],
-  score: 1,
-  rationale:
-    'B. Prompt Engineering = Clear Instruction + Context + Constraints + Examples.\n\nEffective prompts combine clear instructions, relevant context, appropriate constraints, and examples when needed. These components help the AI produce more accurate and useful responses.',
-},
-{
-  question:
-    'Which of the following is NOT one of the learning objectives of the module?',
-  choices: [
-    'Distinguish between different prompt types',
-    'Design effective prompts for various tasks',
-    'Build a new Generative AI model',
-    'Improve the quality and accuracy of AI-generated text',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Build a new Generative AI model'],
-  score: 1,
-  rationale:
-    'C. Build a new Generative AI model.\n\nPrompt engineering focuses on using AI effectively through well-designed prompts, not on developing or training new AI models.',
 },
 {
   question:
@@ -1182,144 +1141,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     'B. To place limits on the response.\n\nConstraints define boundaries such as word count, tone, style, or content requirements, helping the AI produce responses that meet specific expectations.',
-},
-{
-  question: 'Why are examples included in prompts?',
-  choices: [
-    'To waste tokens',
-    'To show the AI the expected style or output',
-    'To replace instructions',
-    'To make prompts longer',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['To show the AI the expected style or output'],
-  score: 1,
-  rationale:
-    'B. To show the AI the expected style or output.\n\nExamples help the AI understand the desired format, writing style, or pattern, leading to more consistent and accurate responses.',
-},
-{
-  question:
-    'Which prompt engineering technique uses symbols such as triple quotation marks (""") or ### to separate instructions from reference material?',
-  choices: [
-    'Context Switching',
-    'Delimiters',
-    'Prompt Chaining',
-    'Token Mapping',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Delimiters'],
-  score: 1,
-  rationale:
-    'B. Delimiters.\n\nDelimiters separate instructions from supporting content, making it easier for the AI to distinguish between what it should do and the information it should use.',
-},
-{
-  question:
-    'What is the primary purpose of assigning a role in a prompt, such as "Act as a cybersecurity consultant"?',
-  choices: [
-    'To reduce the AI\'s processing time',
-    'To guide the AI toward using relevant expertise and terminology',
-    'To connect the AI to the internet automatically',
-    'To increase the number of output tokens',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'To guide the AI toward using relevant expertise and terminology',
-  ],
-  score: 1,
-  rationale:
-    'B. To guide the AI toward using relevant expertise and terminology.\n\nAssigning a role helps the AI respond from a specific perspective, using language, knowledge, and reasoning appropriate for that role.',
-},
-{
-  question:
-    'Why is the prompt "Write something about technology" considered ineffective?',
-  choices: [
-    'It contains too many technical terms',
-    'It lacks sufficient context, audience, and specific instructions',
-    'It is too long for an AI model',
-    'It prevents the AI from generating creative responses',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'It lacks sufficient context, audience, and specific instructions',
-  ],
-  score: 1,
-  rationale:
-    'B. It lacks sufficient context, audience, and specific instructions.\n\nA vague prompt gives the AI little guidance, which can lead to broad or irrelevant responses. Adding context and clear instructions produces better results.',
-},
-{
-  question:
-    'Providing an AI model with several examples of your desired output before asking it to perform a task is called:',
-  choices: [
-    'Zero-shot Prompting',
-    'Few-shot Prompting',
-    'Chain-of-Thought Training',
-    'Reinforcement Learning',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Few-shot Prompting'],
-  score: 1,
-  rationale:
-    'B. Few-shot Prompting.\n\nFew-shot prompting provides the AI with a few examples of the desired output before giving it a new task. These examples help the model better understand the expected format and style.',
-},
-{
-  question:
-    'Which statement best explains the phrase "Garbage In, Garbage Out"?',
-  choices: [
-    'AI always gives incorrect answers',
-    'The quality of AI output depends on the quality of the prompt',
-    'AI can only answer easy questions',
-    'AI should never be trusted',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['The quality of AI output depends on the quality of the prompt'],
-  score: 1,
-  rationale:
-    'B. The quality of AI output depends on the quality of the prompt.\n\nClear, specific prompts produce more accurate and useful responses, while vague or poorly written prompts often lead to poor results.',
-},
-{
-  question:
-    'Which prompt type directly tells the AI what to do (e.g. "Summarize this article")?',
-  choices: [
-    'Instructional Prompt',
-    'Role-Based Prompt',
-    'Creative Prompt',
-    'Comparison Prompt',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Instructional Prompt'],
-  score: 1,
-  rationale:
-    'A. Instructional Prompt.\n\nAn instructional prompt gives the AI a direct command to perform a specific task, such as summarizing, translating, explaining, or rewriting content.',
-},
-{
-  question:
-    '"You are a career coach. Give me interview tips." This is an example of which prompt type?',
-  choices: [
-    'Creative Prompt',
-    'Comparison Prompt',
-    'Role-Based Prompt',
-    'Question-Answer Prompt',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Role-Based Prompt'],
-  score: 1,
-  rationale:
-    'C. Role-Based Prompt.\n\nA role-based prompt assigns the AI a specific role or profession, helping it respond with language and expertise appropriate to that role.',
-},
-{
-  question:
-    'Which prompt type is most appropriate for writing poems and stories?',
-  choices: [
-    'Instructional Prompt',
-    'Creative Prompt',
-    'Step-by-Step Prompt',
-    'Comparison Prompt',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Creative Prompt'],
-  score: 1,
-  rationale:
-    'B. Creative Prompt.\n\nCreative prompts encourage the AI to generate original content such as stories, poems, scripts, or imaginative ideas.',
 },
 {
   question:
@@ -1475,21 +1296,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     'B. Notion AI.\n\nNotion AI helps users organize notes, summarize information, generate content, and collaborate within a shared workspace.',
-},
-{
-  question:
-    'Microsoft Copilot is best categorized as a:',
-  choices: [
-    'Content Creation Tool',
-    'Editing Tool',
-    'Collaboration & Productivity Tool',
-    'Search Engine',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Collaboration & Productivity Tool'],
-  score: 1,
-  rationale:
-    'C. Collaboration & Productivity Tool.\n\nMicrosoft Copilot assists users with tasks across Microsoft 365 applications, helping improve productivity through writing, analysis, summarization, and automation.',
 },
 {
   question:
