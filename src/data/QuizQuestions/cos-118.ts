@@ -22,21 +22,7 @@ export const cos118: Topic = {
   rationale:
     'B. By gradually refining random noise into a meaningful image.\n\nDiffusion models begin with random noise and gradually remove it over multiple steps until a realistic image matching the prompt is produced.',
 },
-{
-  question:
-    'Which prompt element is generally least useful when trying to obtain predictable, professional-quality AI-generated images?',
-  choices: [
-    'Camera angle descriptions',
-    'Lighting specifications',
-    'Composition details',
-    'Subjective words like "awesome" or "beautiful"',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Subjective words like "awesome" or "beautiful"'],
-  score: 1,
-  rationale:
-    'D. Subjective words like "awesome" or "beautiful".\n\nVague descriptions are open to interpretation. Specific details such as lighting, camera angle, and composition help AI generate more consistent and predictable images.',
-},
+
 {
   question:
     'Why is Adobe Firefly widely accepted for commercial creative work?',
@@ -51,53 +37,6 @@ export const cos118: Topic = {
   score: 1,
   rationale:
     'B. It is trained primarily on licensed and public-domain content.\n\nAdobe Firefly emphasizes commercially safe content by using licensed and public-domain datasets, making it suitable for business and professional creative work.',
-},
-{
-  question:
-    'In image generation tools such as Midjourney, what does the parameter --ar 16:9 specify?',
-  choices: [
-    'Image rendering speed',
-    'Aspect ratio of the generated image',
-    'Color saturation level',
-    'Image file size',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Aspect ratio of the generated image'],
-  score: 1,
-  rationale:
-    'B. Aspect ratio of the generated image.\n\nThe --ar parameter sets the image\'s aspect ratio, such as 16:9 for widescreen or 1:1 for a square image.',
-},
-{
-  question:
-    'A business uses AI to automatically generate dozens of product advertisements and logo concepts within minutes. This is an example of:',
-  choices: [
-    'Text Normalization',
-    'Branding and Advertising Automation',
-    'Speech Recognition',
-    'Extractive Summarization',
-  ],
-  type: 'MCQs',
-  correctAnswers: ['Branding and Advertising Automation'],
-  score: 1,
-  rationale:
-    'B. Branding and Advertising Automation.\n\nGenerative AI can quickly create marketing materials such as advertisements, logos, and promotional designs, helping businesses produce creative content at scale.',
-},
-{
-  question:
-    'Why does generating a high-definition AI video require significantly more computing resources than generating text?',
-  choices: [
-    'Every video frame must remain visually consistent while simulating movement',
-    'Videos contain more punctuation than text',
-    'Video generation uses fewer neural networks',
-    'Text generation requires internet access while video does not',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'Every video frame must remain visually consistent while simulating movement',
-  ],
-  score: 1,
-  rationale:
-    'A. Every video frame must remain visually consistent while simulating movement.\n\nAI video generation must create many consecutive frames while maintaining consistent objects, lighting, and motion, making it much more computationally demanding than text generation.',
 },
 {
   question:
@@ -579,16 +518,6 @@ export const cos118: Topic = {
 },
 {
   question:
-    'According to the module, what percentage of businesses plan to invest in Generative AI in the coming years?',
-  choices: ['50%', '75%', '92%', '100%'],
-  type: 'MCQs',
-  correctAnswers: ['92%'],
-  score: 1,
-  rationale:
-    'C. 92%.\n\nThe module highlights that 92% of businesses plan to invest in Generative AI, reflecting its growing importance in improving productivity, innovation, and business operations.',
-},
-{
-  question:
     'How does Generative AI support sentiment analysis in marketing?',
   choices: [
     'By analyzing customer feedback and social media interactions to gauge public perception',
@@ -604,23 +533,7 @@ export const cos118: Topic = {
   rationale:
     'A. By analyzing customer feedback and social media interactions to gauge public perception.\n\nGenerative AI analyzes customer reviews, comments, and social media conversations to identify opinions, emotions, and overall public sentiment toward a brand or product.',
 },
-{
-  question:
-    'According to the case studies, how does Netflix mainly use AI?',
-  choices: [
-    'To automatically write its original movie scripts',
-    'To power recommendation systems that personalize the viewing experience based on user behavior',
-    'To manage global warehouse inventory',
-    'To design promotional merchandise',
-  ],
-  type: 'MCQs',
-  correctAnswers: [
-    'To power recommendation systems that personalize the viewing experience based on user behavior',
-  ],
-  score: 1,
-  rationale:
-    "B. To power recommendation systems that personalize the viewing experience based on user behavior.\n\nNetflix uses AI to analyze viewing habits and recommend movies and TV shows that match each user's interests and preferences.",
-},
+
 {
   question:
     'What is the ultimate goal of content marketing, as defined in the module?',
