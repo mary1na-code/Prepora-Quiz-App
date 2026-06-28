@@ -56,7 +56,7 @@ export const quizTopics: QuizTopic[] = [
   {
     title: 'COS 102',
     // icon: <CSS />,
-    disabled: true,
+    disabled: false,
   },
   {
     title: 'PHY 102',

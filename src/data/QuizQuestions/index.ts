@@ -5,6 +5,7 @@ import { gst114 } from './gst-114'
 import { cos118 } from './cos-118'
 import { cos118_2 } from './cos-118_2'
 import { cos116 } from './cos-116'
+import { cos102 } from './cos-102'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -53,4 +54,5 @@ export const quiz: Record<string, Topic> = {
   'COS 118': prepareTopic(cos118),
   'COS 118_2': prepareTopic(cos118_2),
   'COS 116': prepareTopic(cos116),
+  'COS 102': prepareTopic(cos102),
 }
