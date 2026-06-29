@@ -58,6 +58,95 @@ export const cos102: Topic = {
     'B. It helps developers plan program logic without worrying about programming language syntax.\n\nPseudocode focuses on the logic of a solution, making it easier to understand and later translate into any programming language.',
 },
 {
+  question: 'Who created Python, and in what year was it first released?',
+  choices: [
+    'Guido van Rossum, 1991',
+    'Dennis Ritchie, 1972',
+    'James Gosling, 1995',
+    'Bjarne Stroustrup, 1985',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Guido van Rossum, 1991'],
+  score: 1,
+  rationale:
+    'A. Guido van Rossum, 1991.\n\nPython was created by Guido van Rossum and was first released in 1991. It was designed to emphasize readability and simplicity.',
+},
+{
+  question: 'What does it mean that Python is a dynamically typed language?',
+  choices: [
+    "You must declare a variable's type before using it.",
+    "Python automatically determines a variable's type without it being declared.",
+    'Python code cannot run on multiple operating systems.',
+    "A variable's type can never change once set.",
+  ],
+  type: 'MCQs',
+  correctAnswers: [
+    "Python automatically determines a variable's type without it being declared.",
+  ],
+  score: 1,
+  rationale:
+    "B. Python automatically determines a variable's type without it being declared.\n\nPython assigns a data type automatically when a value is stored in a variable, so programmers do not need to declare the type explicitly.",
+},
+{
+  question:
+    'What does Python use to define blocks of code instead of curly braces or semicolons?',
+  choices: [
+    'Parentheses ( )',
+    'Whitespace indentation',
+    'Square brackets [ ]',
+    'Double colons (::)',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Whitespace indentation'],
+  score: 1,
+  rationale:
+    'B. Whitespace indentation.\n\nPython uses indentation to group statements into blocks, making the program structure clear and easy to read.',
+},
+{
+  question:
+    'Which of the following correctly creates a multi-line comment-style block in Python?',
+  choices: [
+    '// This is a comment //',
+    '/* This is a comment */',
+    "''' This is a comment '''",
+    '<!-- This is a comment -->',
+  ],
+  type: 'MCQs',
+  correctAnswers: ["''' This is a comment '''"],
+  score: 1,
+  rationale:
+    "C. ''' This is a comment '''.\n\nTriple quotes are commonly used for multi-line documentation or comment-style blocks that span several lines.",
+},
+{
+  question: 'Which of the following is an INVALID Python variable name?',
+  choices: [
+    'student_name',
+    '_total',
+    '2nd_score',
+    'Age2',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['2nd_score'],
+  score: 1,
+  rationale:
+    'C. 2nd_score.\n\nPython variable names cannot begin with a digit. They must start with a letter or an underscore.',
+},
+{
+  question:
+    'Which of the following CANNOT be used as a Python variable name because it is a reserved keyword?',
+  choices: [
+    'score',
+    'class',
+    'total_score',
+    'age',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['class'],
+  score: 1,
+  rationale:
+    'B. class.\n\n`class` is a reserved keyword in Python used for defining classes, so it cannot be used as a variable name.',
+},
+{
   question:
     'In pseudocode, which keyword is typically used to accept information from a user?',
   choices: [
