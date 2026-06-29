@@ -49,7 +49,7 @@ export const quizTopics: QuizTopic[] = [
   //   disabled: false,
   // },
   {
-    title: 'MTH 102',
+    title: 'MATH 102',
     // icon: <Django />,
     disabled: false,
   },
