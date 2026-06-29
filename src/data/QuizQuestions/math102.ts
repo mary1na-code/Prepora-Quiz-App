@@ -1,8 +1,8 @@
 
 import { Topic } from '.'
 
-export const cos102: Topic = {
-  topic: 'COS 102 - Problem Solving',
+export const math102: Topic = {
+  topic: 'MATH 102 - Calculus',
   level: 'null',
   totalQuestions: 40,
   totalScore: 50,

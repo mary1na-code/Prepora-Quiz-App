@@ -51,7 +51,7 @@ export const quizTopics: QuizTopic[] = [
   {
     title: 'MTH 102',
     // icon: <Django />,
-    disabled: true,
+    disabled: false,
   },
   {
     title: 'COS 102',
