@@ -849,6 +849,7 @@ export const cos102: Topic = {
     rationale:
       'B. Correct answer.\n\nThis is a runtime error: the code is syntactically valid, but int() cannot convert the text \'twenty\' into a whole number, so Python raises a ValueError at the moment the line executes.',
   },
+  
   {
   question:
     'What is the primary purpose of writing constant names in ALL_CAPS in Python?',
