@@ -61,11 +61,11 @@ export const quizTopics: QuizTopic[] = [
   {
     title: 'PHY 102',
     // icon: <Kotlin />,
-    disabled: true,
+    disabled: false,
   },
   {
     title: 'PHY 108',
     // icon: <Laravel />,
-    disabled: true,
+    disabled: false,
   },
 ]
