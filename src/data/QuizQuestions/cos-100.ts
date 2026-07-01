@@ -8,113 +8,152 @@ export const cos100: Topic = {
   totalTime: 2400, // estimate (40 min) - source had no time limit, adjust as needed
   questions: [
     {
-  question: "What is a Version Control System (VCS)?",
+  question:
+    'What is the primary purpose of a Version Control System (VCS)?',
   choices: [
-    "A software tool that records and manages changes to files over time",
-    "A program used only for compiling source code",
-    "A database management system",
-    "An operating system utility"
+    'To record and manage changes made to files over time',
+    'To compile source code into executable programs',
+    'To design graphical user interfaces',
+    'To increase a computer’s processing speed',
   ],
-  type: "MCQs",
-  correctAnswer: "A software tool that records and manages changes to files over time"
+  type: 'MCQs',
+  correctAnswers: ['To record and manage changes made to files over time'],
+  score: 1,
+  rationale:
+    'A Version Control System tracks changes to files over time, allowing users to view history, compare versions, restore previous versions, and collaborate effectively.',
 },
 {
-  question: "Which of the following is NOT a function of a Version Control System?",
+  question:
+    'Which of the following is NOT a benefit of using a Version Control System?',
   choices: [
-    "Tracking file changes",
-    "Restoring previous versions",
-    "Automatically repairing damaged hardware",
-    "Supporting collaboration"
+    'Maintaining a history of file modifications',
+    'Supporting collaboration among multiple developers',
+    'Automatically fixing programming errors',
+    'Allowing users to restore previous versions',
   ],
-  type: "MCQs",
-  correctAnswer: "Automatically repairing damaged hardware"
+  type: 'MCQs',
+  correctAnswers: ['Automatically fixing programming errors'],
+  score: 1,
+  rationale:
+    'A VCS tracks and manages changes but does not automatically detect or fix programming errors.',
 },
 {
-  question: "Why is a Version Control System important in software development?",
+  question:
+    'A programmer repeatedly saves files as Project_v1, Project_v2, and Project_v3. Which problem does a Version Control System solve in this situation?',
   choices: [
-    "It allows developers to track changes and collaborate efficiently",
-    "It permanently deletes old versions of files",
-    "It replaces programming languages",
-    "It increases internet speed"
+    'It automatically manages file versions and history',
+    'It converts the project into machine code',
+    'It compresses the project into a ZIP file',
+    'It permanently deletes old versions',
   ],
-  type: "MCQs",
-  correctAnswer: "It allows developers to track changes and collaborate efficiently"
+  type: 'MCQs',
+  correctAnswers: ['It automatically manages file versions and history'],
+  score: 1,
+  rationale:
+    'A VCS eliminates the need for manually creating multiple versions by recording every change in an organized history.',
 },
 {
-  question: "Which type of Version Control System stores versions on a single computer?",
+  question:
+    'Which of the following is one reason Version Control Systems improve productivity?',
   choices: [
-    "Distributed Version Control System",
-    "Centralized Version Control System",
-    "Local Version Control System",
-    "Cloud Version Control System"
+    'Developers spend less time manually managing file versions',
+    'Programs execute faster after every commit',
+    'Internet connectivity is no longer required for all projects',
+    'All programming bugs are automatically removed',
   ],
-  type: "MCQs",
-  correctAnswer: "Local Version Control System"
+  type: 'MCQs',
+  correctAnswers: [
+    'Developers spend less time manually managing file versions',
+  ],
+  score: 1,
+  rationale:
+    'By handling version tracking automatically, a VCS allows developers to focus on development instead of file management.',
 },
 {
-  question: "Which of the following is an example of a Local Version Control System?",
+  question:
+    'Which type of Version Control System stores all versions on a single computer?',
   choices: [
-    "Git",
-    "Mercurial",
-    "RCS",
-    "Subversion"
+    'Local Version Control System (LVCS)',
+    'Centralized Version Control System (CVCS)',
+    'Distributed Version Control System (DVCS)',
+    'Cloud Version Control System',
   ],
-  type: "MCQs",
-  correctAnswer: "RCS"
+  type: 'MCQs',
+  correctAnswers: ['Local Version Control System (LVCS)'],
+  score: 1,
+  rationale:
+    'A Local Version Control System keeps version history on one computer without relying on a server.',
 },
 {
-  question: "Which Version Control System uses a central server to store all files and versions?",
-  choices: [
-    "Distributed Version Control System",
-    "Local Version Control System",
-    "Centralized Version Control System",
-    "Hybrid Version Control System"
-  ],
-  type: "MCQs",
-  correctAnswer: "Centralized Version Control System"
+  question:
+    'Which of the following is an example of a Local Version Control System?',
+  choices: ['RCS', 'Git', 'Mercurial', 'Subversion (SVN)'],
+  type: 'MCQs',
+  correctAnswers: ['RCS'],
+  score: 1,
+  rationale:
+    'RCS (Revision Control System) is the example of a Local Version Control System given in the lecture note.',
 },
 {
-  question: "Which of the following is an example of a Centralized Version Control System?",
+  question:
+    'Which of the following is a major disadvantage of a Local Version Control System?',
   choices: [
-    "Git",
-    "Mercurial",
-    "CVS",
-    "RCS"
+    'It does not support collaboration effectively',
+    'It requires every user to have a complete repository',
+    'It cannot store project files',
+    'It always requires an internet connection',
   ],
-  type: "MCQs",
-  correctAnswer: "CVS"
+  type: 'MCQs',
+  correctAnswers: ['It does not support collaboration effectively'],
+  score: 1,
+  rationale:
+    'Since all versions are stored locally, LVCS provides little or no support for collaborative software development.',
 },
 {
-  question: "Which Version Control System gives every user a complete copy of the repository?",
+  question:
+    'Which type of Version Control System stores project files and versions on a central server?',
   choices: [
-    "Centralized Version Control System",
-    "Distributed Version Control System",
-    "Local Version Control System",
-    "Manual Version Control System"
+    'Centralized Version Control System (CVCS)',
+    'Distributed Version Control System (DVCS)',
+    'Local Version Control System (LVCS)',
+    'Manual Version Control System',
   ],
-  type: "MCQs",
-  correctAnswer: "Distributed Version Control System"
+  type: 'MCQs',
+  correctAnswers: ['Centralized Version Control System (CVCS)'],
+  score: 1,
+  rationale:
+    'In a CVCS, all project files and version history are maintained on a central server that clients connect to.',
 },
 {
-  question: "Which of the following is an example of a Distributed Version Control System?",
+  question:
+    'Which pair consists entirely of Centralized Version Control Systems?',
   choices: [
-    "RCS",
-    "CVS",
-    "Git",
-    "SVN"
+    'CVS and Subversion (SVN)',
+    'Git and Mercurial',
+    'RCS and Git',
+    'Mercurial and RCS',
   ],
-  type: "MCQs",
-  correctAnswer: "Git"
+  type: 'MCQs',
+  correctAnswers: ['CVS and Subversion (SVN)'],
+  score: 1,
+  rationale:
+    'CVS and Subversion (SVN) are both examples of Centralized Version Control Systems.',
 },
 {
-  question: "Which advantage is unique to a Distributed Version Control System?",
+  question:
+    'Why is a Centralized Version Control System considered to have a single point of failure?',
   choices: [
-    "No collaboration support",
-    "Offline work capability",
-    "Depends entirely on one central server",
-    "Requires no local repository"
+    'If the central server fails, users cannot access the shared repository',
+    'Every developer keeps a complete copy of the repository',
+    'It permanently deletes project history after each commit',
+    'It only works on one operating system',
   ],
-  type: "MCQs",
-  correctAnswer: "Offline work capability"
+  type: 'MCQs',
+  correctAnswers: [
+    'If the central server fails, users cannot access the shared repository',
+  ],
+  score: 1,
+  rationale:
+    'Because the central server stores the project's shared history, its failure or downtime affects every connected user.',
 },
 ]}
