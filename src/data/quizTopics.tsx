@@ -68,4 +68,9 @@ export const quizTopics: QuizTopic[] = [
     // icon: <Laravel />,
     disabled: false,
   },
+  {
+    title: 'COS 100',
+    // icon: <Laravel />,
+    disabled: false,
+  },
 ]
