@@ -154,6 +154,158 @@ export const cos100: Topic = {
   ],
   score: 1,
   rationale:
-    'Because the central server stores the project's shared history, its failure or downtime affects every connected user.',
+    "Because the central server stores the project's shared history, its failure or downtime affects every connected user.",
+},
+{
+  question:
+    'Which statement best describes a Distributed Version Control System (DVCS)?',
+  choices: [
+    'Each user has a complete copy of the repository',
+    'Only the server stores the complete repository',
+    'Files are stored only on the developer’s local machine without synchronization',
+    'It requires a constant internet connection for every operation',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Each user has a complete copy of the repository'],
+  score: 1,
+  rationale:
+    'A DVCS allows every user to clone the entire repository, including its complete history, making development possible even when offline.',
+},
+{
+  question:
+    'Which pair consists entirely of Distributed Version Control Systems?',
+  choices: [
+    'Git and Mercurial',
+    'Git and CVS',
+    'RCS and Mercurial',
+    'SVN and CVS',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Git and Mercurial'],
+  score: 1,
+  rationale:
+    'Git and Mercurial are both Distributed Version Control Systems, whereas CVS and SVN are centralized systems.',
+},
+{
+  question:
+    'Which of the following is an advantage of a Distributed Version Control System?',
+  choices: [
+    'It allows developers to work offline',
+    'It has only one copy of the repository',
+    'It depends entirely on a central server',
+    'It prevents developers from creating branches',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['It allows developers to work offline'],
+  score: 1,
+  rationale:
+    'Since every developer has a complete local copy of the repository, most Git operations can be performed without an internet connection.',
+},
+{
+  question:
+    'Which of the following is a disadvantage of a Distributed Version Control System?',
+  choices: [
+    'It has a steeper learning curve for beginners',
+    'It cannot support branching',
+    'It does not keep project history',
+    'It cannot be used for team collaboration',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['It has a steeper learning curve for beginners'],
+  score: 1,
+  rationale:
+    'Although DVCSs are powerful and flexible, they are generally more difficult for beginners to learn than simpler systems.',
+},
+{
+  question:
+    'What is a repository (repo) in the context of version control?',
+  choices: [
+    'A storage location that contains project files, version history, and related information',
+    'A software program used to write code',
+    'A programming language',
+    'A folder that stores only executable files',
+  ],
+  type: 'MCQs',
+  correctAnswers: [
+    'A storage location that contains project files, version history, and related information',
+  ],
+  score: 1,
+  rationale:
+    'A repository stores the project files along with commit history and other information needed for version control.',
+},
+{
+  question:
+    'Which of the following is NOT typically contained in a repository?',
+  choices: [
+    'Source code',
+    'Commit history',
+    'Configuration files',
+    'Computer hardware components',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Computer hardware components'],
+  score: 1,
+  rationale:
+    'Repositories contain digital project resources such as source code, documents, images, configuration files, and commit history—not physical hardware.',
+},
+{
+  question:
+    'Which of the following is NOT a function of a repository?',
+  choices: [
+    'Executing source code automatically',
+    'Tracking modifications',
+    'Maintaining project history',
+    'Supporting collaboration',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Executing source code automatically'],
+  score: 1,
+  rationale:
+    'A repository stores and tracks project data; it does not automatically execute or run source code.',
+},
+{
+  question:
+    'Which type of repository is stored directly on a user’s computer?',
+  choices: [
+    'Local repository',
+    'Remote repository',
+    'Central repository',
+    'Shared repository',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Local repository'],
+  score: 1,
+  rationale:
+    'A local repository resides on the developer’s own computer, allowing fast access and offline work.',
+},
+{
+  question:
+    'Which of the following is an advantage of a remote repository?',
+  choices: [
+    'It enables collaboration and centralized backup',
+    'It eliminates the need for an internet connection',
+    'It removes the need for local repositories',
+    'It guarantees complete protection from security threats',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['It enables collaboration and centralized backup'],
+  score: 1,
+  rationale:
+    'Remote repositories make collaboration easier by providing a shared location for project storage and backup.',
+},
+{
+  question:
+    'Which of the following platforms is commonly used to host remote Git repositories?',
+  choices: [
+    'GitHub',
+    'Visual Studio Code',
+    'Notepad++',
+    'Microsoft Word',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['GitHub'],
+  score: 1,
+  rationale:
+    'GitHub is one of the most popular cloud platforms for hosting remote Git repositories and supporting team collaboration.',
 },
 ]}
