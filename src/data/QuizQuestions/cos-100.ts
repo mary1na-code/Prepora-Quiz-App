@@ -308,4 +308,158 @@ export const cos100: Topic = {
   rationale:
     'GitHub is one of the most popular cloud platforms for hosting remote Git repositories and supporting team collaboration.',
 },
+{
+  question:
+    'Which statement best defines Git?',
+  choices: [
+    'A distributed version control system used to manage software development projects',
+    'A programming language for building web applications',
+    'A cloud storage service for multimedia files',
+    'A database management system',
+  ],
+  type: 'MCQs',
+  correctAnswers: [
+    'A distributed version control system used to manage software development projects',
+  ],
+  score: 1,
+  rationale:
+    'Git is a Distributed Version Control System (DVCS) developed to efficiently track changes, maintain project history, and support collaboration.',
+},
+{
+  question:
+    'Who developed Git in 2005?',
+  choices: [
+    'Linus Torvalds',
+    'James Gosling',
+    'Guido van Rossum',
+    'Dennis Ritchie',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Linus Torvalds'],
+  score: 1,
+  rationale:
+    'Git was created by Linus Torvalds in 2005 to support the development of the Linux kernel.',
+},
+{
+  question:
+    'Which Git principle ensures that every developer has a complete copy of the repository?',
+  choices: [
+    'Distributed Architecture',
+    'Data Integrity',
+    'Snapshot-Based Storage',
+    'Branching and Merging',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Distributed Architecture'],
+  score: 1,
+  rationale:
+    'Git follows a distributed architecture where each user clones the entire repository, including its complete history.',
+},
+{
+  question:
+    'Git uses hashing algorithms primarily to provide:',
+  choices: [
+    'Data integrity',
+    'Internet connectivity',
+    'Automatic code compilation',
+    'Graphical user interfaces',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Data integrity'],
+  score: 1,
+  rationale:
+    'Git uses cryptographic hashing to ensure that data remains consistent and that changes can be verified reliably.',
+},
+{
+  question:
+    'Unlike some older version control systems, Git stores project history as:',
+  choices: [
+    'Snapshots of the project',
+    'Only differences between files',
+    'Compressed executable files',
+    'Database records only',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Snapshots of the project'],
+  score: 1,
+  rationale:
+    'Git stores snapshots of the project at different points in time rather than only recording file differences.',
+},
+{
+  question:
+    'Which Git command is used to initialize a new Git repository in the current directory?',
+  choices: [
+    'git init',
+    'git clone',
+    'git status',
+    'git add',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['git init'],
+  score: 1,
+  rationale:
+    'The git init command creates a new Git repository so that Git can begin tracking the project.',
+},
+{
+  question:
+    'Which Git command displays modified, new, and staged files in a repository?',
+  choices: [
+    'git status',
+    'git log',
+    'git diff',
+    'git reset',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['git status'],
+  score: 1,
+  rationale:
+    'git status provides information about the current state of the working directory and staging area.',
+},
+{
+  question:
+    'After editing a file, which Git command places it in the staging area?',
+  choices: [
+    'git add',
+    'git commit',
+    'git merge',
+    'git checkout',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['git add'],
+  score: 1,
+  rationale:
+    'The git add command moves changes from the working directory into the staging area, preparing them for a commit.',
+},
+{
+  question:
+    'Which Git command permanently records staged changes in the local repository?',
+  choices: [
+    'git commit',
+    'git push',
+    'git pull',
+    'git diff',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['git commit'],
+  score: 1,
+  rationale:
+    'git commit saves a snapshot of the staged changes in the local repository along with a commit message.',
+},
+{
+  question:
+    'Which sequence correctly represents the basic Git workflow?',
+  choices: [
+    'Working Directory → git add → Staging Area → git commit → Local Repository → git push → Remote Repository',
+    'Working Directory → git commit → git add → Remote Repository',
+    'Remote Repository → git push → Local Repository → Staging Area',
+    'Working Directory → git merge → git checkout → Remote Repository',
+  ],
+  type: 'MCQs',
+  correctAnswers: [
+    'Working Directory → git add → Staging Area → git commit → Local Repository → git push → Remote Repository',
+  ],
+  score: 1,
+  rationale:
+    'The standard Git workflow begins in the working directory, stages changes with git add, commits them locally with git commit, and finally uploads them to a remote repository using git push.',
+},
 ]}
