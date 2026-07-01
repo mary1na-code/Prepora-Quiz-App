@@ -10,6 +10,7 @@ import { math102 } from './math102'
 import { phy102 } from './phy102'
 import { phy108 } from './phy108'
 import { cos100 } from './cos-100'
+import { bio102 } from './bio-102'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -63,4 +64,5 @@ export const quiz: Record<string, Topic> = {
   'PHY 102': prepareTopic(phy102),
   'PHY 108': prepareTopic(phy108),
   'COS 100': prepareTopic(cos100),
+  'BIO 102': prepareTopic(bio102),
 }

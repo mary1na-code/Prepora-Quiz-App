@@ -73,4 +73,9 @@ export const quizTopics: QuizTopic[] = [
     // icon: <Laravel />,
     disabled: false,
   },
+   {
+    title: 'BIO 102',
+    // icon: <Laravel />,
+    disabled: false,
+  },
 ]
