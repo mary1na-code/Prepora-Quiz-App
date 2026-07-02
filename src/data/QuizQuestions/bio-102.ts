@@ -399,4 +399,172 @@ export const bio102: Topic = {
   rationale:
     'C. Fallopian tube.\n\nIn humans, fertilization typically occurs in the fallopian tube before the embryo moves to the uterus for implantation.',
 },
+{
+  question: 'Which male reproductive organ produces both sperm and testosterone?',
+  choices: [
+    'Epididymis',
+    'Vas deferens',
+    'Testes',
+    'Prostate gland',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Testes'],
+  score: 1,
+  rationale:
+    'C. Testes.\n\nThe testes are the male reproductive organs responsible for producing sperm cells and the hormone testosterone.',
+},
+{
+  question: "A camel's hump, which stores fat, is an example of:",
+  choices: [
+    'Behavioral adaptation',
+    'Structural adaptation',
+    'Physiological adaptation',
+    'Reproductive adaptation',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Structural adaptation'],
+  score: 1,
+  rationale:
+    "B. Structural adaptation.\n\nA camel's hump is a physical feature that stores fat, helping the animal survive long periods without food in desert environments.",
+},
+{
+  question: 'Birds migrating to warmer regions during winter is an example of:',
+  choices: [
+    'Structural adaptation',
+    'Behavioral adaptation',
+    'Physiological adaptation',
+    'Evolutionary adaptation',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Behavioral adaptation'],
+  score: 1,
+  rationale:
+    'B. Behavioral adaptation.\n\nMigration is an action or behavior that helps birds survive unfavorable weather and food shortages during winter.',
+},
+{
+  question: 'Desert plants opening their stomata at night to reduce water loss is an example of:',
+  choices: [
+    'Structural adaptation',
+    'Behavioral adaptation',
+    'Physiological adaptation',
+    'Defensive adaptation',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Physiological adaptation'],
+  score: 1,
+  rationale:
+    'C. Physiological adaptation.\n\nOpening stomata at night is an internal physiological process that minimizes water loss while allowing gas exchange.',
+},
+{
+  question: 'The complete equation for aerobic respiration produces which of the following end products?',
+  choices: [
+    'Alcohol and carbon dioxide',
+    'Lactic acid only',
+    'Carbon dioxide, water, and energy (ATP)',
+    'Glucose and oxygen',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Carbon dioxide, water, and energy (ATP)'],
+  score: 1,
+  rationale:
+    'C. Carbon dioxide, water, and energy (ATP).\n\nDuring aerobic respiration, glucose reacts with oxygen to produce carbon dioxide, water, and ATP, the cell’s usable form of energy.',
+},
+{
+  question: 'In humans, gaseous exchange occurs primarily in the:',
+  choices: [
+    'Trachea',
+    'Lungs',
+    'Gills',
+    'Skin',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Lungs'],
+  score: 1,
+  rationale:
+    'B. Lungs.\n\nThe lungs contain millions of alveoli where oxygen diffuses into the blood and carbon dioxide diffuses out.',
+},
+{
+  question: 'Which type of blood vessel carries blood away from the heart?',
+  choices: [
+    'Vein',
+    'Capillary',
+    'Artery',
+    'Venule',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Artery'],
+  score: 1,
+  rationale:
+    'C. Artery.\n\nArteries carry blood away from the heart to various parts of the body, while veins return blood to the heart.',
+},
+{
+  question: 'In the human double circulatory system, blood passes through the heart:',
+  choices: [
+    'Once in one complete cycle',
+    'Twice in one complete cycle',
+    'Three times in one complete cycle',
+    'Only during physical activity',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Twice in one complete cycle'],
+  score: 1,
+  rationale:
+    'B. Twice in one complete cycle.\n\nIn double circulation, blood passes through the heart once during pulmonary circulation and again during systemic circulation.',
+},
+{
+  question: 'Animals with jointed limbs and a hard exoskeleton belong to which phylum?',
+  choices: [
+    'Mollusca',
+    'Arthropoda',
+    'Annelida',
+    'Echinodermata',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Arthropoda'],
+  score: 1,
+  rationale:
+    'B. Arthropoda.\n\nArthropods are characterized by jointed appendages and a hard exoskeleton made of chitin.',
+},
+{
+  question: 'Which phylum is characterized by radial symmetry and the presence of stinging cells?',
+  choices: [
+    'Porifera',
+    'Cnidaria',
+    'Platyhelminthes',
+    'Nematoda',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Cnidaria'],
+  score: 1,
+  rationale:
+    'B. Cnidaria.\n\nCnidarians possess radial symmetry and specialized stinging cells called cnidocytes used for capturing prey and defense.',
+},
+{
+  question: 'What is the correct hierarchical order of biological classification from largest to smallest?',
+  choices: [
+    'Kingdom → Phylum → Class → Order → Family → Genus → Species',
+    'Species → Genus → Family → Order → Class → Phylum → Kingdom',
+    'Kingdom → Class → Phylum → Order → Family → Genus → Species',
+    'Phylum → Kingdom → Class → Order → Family → Genus → Species',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Kingdom → Phylum → Class → Order → Family → Genus → Species'],
+  score: 1,
+  rationale:
+    'A. Kingdom → Phylum → Class → Order → Family → Genus → Species.\n\nBiological classification proceeds from the broadest category (Kingdom) to the most specific category (Species).',
+},
+{
+  question: 'Which feature correctly distinguishes prokaryotes from eukaryotes?',
+  choices: [
+    'Prokaryotes have a nucleus; eukaryotes do not',
+    'Prokaryotes have 70S ribosomes; eukaryotes have 80S ribosomes',
+    'Prokaryotes are larger than eukaryotes',
+    'Prokaryotes have membrane-bound organelles; eukaryotes do not',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Prokaryotes have 70S ribosomes; eukaryotes have 80S ribosomes'],
+  score: 1,
+  rationale:
+    'B. Prokaryotes have 70S ribosomes; eukaryotes have 80S ribosomes.\n\nOne major distinction is that prokaryotic cells contain 70S ribosomes, whereas eukaryotic cells contain larger 80S ribosomes. Prokaryotes also lack a true nucleus and membrane-bound organelles.',
+},
 ]}
