@@ -203,5 +203,200 @@ export const bio102: Topic = {
   rationale:
     'B. Absorption.\n\nFungi are heterotrophs that obtain nutrients by secreting enzymes into their environment and absorbing the digested nutrients.',
 },
-
+{
+  question: 'The network of thread-like structures that forms the body of a mold is called:',
+  choices: [
+    'Sporangium',
+    'Mycelium',
+    'Hypha',
+    'Spore',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Mycelium'],
+  score: 1,
+  rationale:
+    'B. Mycelium.\n\nMycelium is the mass or network of hyphae that forms the vegetative body of a fungus.',
+},
+{
+  question: 'Which group of fungi produces ascospores in sac-like structures called asci?',
+  choices: [
+    'Zygomycota',
+    'Ascomycota',
+    'Basidiomycota',
+    'Deuteromycota',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Ascomycota'],
+  score: 1,
+  rationale:
+    'B. Ascomycota.\n\nMembers of Ascomycota produce sexual spores called ascospores inside sac-like structures known as asci.',
+},
+{
+  question: 'Penicillium is medically important because it is used in the production of:',
+  choices: [
+    'Insulin',
+    'Penicillin',
+    'Vaccines',
+    'Vitamins',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Penicillin'],
+  score: 1,
+  rationale:
+    'B. Penicillin.\n\nThe fungus Penicillium is used to produce penicillin, one of the earliest and most widely used antibiotics.',
+},
+{
+  question: 'In the Five Kingdom System, prokaryotic organisms belong to which kingdom?',
+  choices: [
+    'Protista',
+    'Fungi',
+    'Monera',
+    'Plantae',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Monera'],
+  score: 1,
+  rationale:
+    'C. Monera.\n\nThe kingdom Monera consists of prokaryotic organisms, including bacteria, which lack a true nucleus.',
+},
+{
+  question: 'Which kingdom consists of multicellular, photosynthetic organisms with cellulose cell walls?',
+  choices: [
+    'Animalia',
+    'Fungi',
+    'Plantae',
+    'Protista',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Plantae'],
+  score: 1,
+  rationale:
+    'C. Plantae.\n\nPlants are multicellular, photosynthetic organisms whose cell walls are primarily composed of cellulose.',
+},
+{
+  question: 'Animals are classified as vertebrates or invertebrates based on the presence or absence of a:',
+  choices: [
+    'Brain',
+    'Backbone',
+    'Heart',
+    'Exoskeleton',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Backbone'],
+  score: 1,
+  rationale:
+    'B. Backbone.\n\nVertebrates possess a backbone, while invertebrates do not.',
+},
+{
+  question: 'Which characteristic is shared by both plants and animals?',
+  choices: [
+    'Both are autotrophic',
+    'Both have cell walls',
+    'Both are made of cells',
+    'Both store food as starch',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Both are made of cells'],
+  score: 1,
+  rationale:
+    'C. Both are made of cells.\n\nPlants and animals are living organisms composed of cells, although they differ in many other characteristics.',
+},
+{
+  question: 'Which plant group lacks vascular tissues as well as true roots, stems, and leaves?',
+  choices: [
+    'Pteridophytes',
+    'Bryophytes',
+    'Gymnosperms',
+    'Angiosperms',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Bryophytes'],
+  score: 1,
+  rationale:
+    'B. Bryophytes.\n\nBryophytes are non-vascular plants and do not possess true roots, stems, or leaves.',
+},
+{
+  question: 'Gymnosperms are known as "naked seed plants" because their seeds are:',
+  choices: [
+    'Enclosed in fruits',
+    'Exposed and not enclosed in fruits',
+    'Produced inside flowers',
+    'Found only in aquatic environments',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Exposed and not enclosed in fruits'],
+  score: 1,
+  rationale:
+    'B. Exposed and not enclosed in fruits.\n\nGymnosperm seeds develop without being enclosed by a fruit, which is why they are called naked seeds.',
+},
+{
+  question: 'Which plant group is the most diverse and produces both flowers and fruits?',
+  choices: [
+    'Bryophytes',
+    'Pteridophytes',
+    'Gymnosperms',
+    'Angiosperms',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Angiosperms'],
+  score: 1,
+  rationale:
+    'D. Angiosperms.\n\nAngiosperms are flowering plants that produce fruits enclosing their seeds and are the most diverse plant group.',
+},
+{
+  question: 'Which of the following is NOT a function of plant roots?',
+  choices: [
+    'Anchoring the plant',
+    'Absorbing water and minerals',
+    'Photosynthesis',
+    'Storing food',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Photosynthesis'],
+  score: 1,
+  rationale:
+    'C. Photosynthesis.\n\nRoots anchor the plant, absorb water and minerals, and often store food. Photosynthesis mainly occurs in the leaves.',
+},
+{
+  question: 'The functional unit of the kidney responsible for blood filtration is the:',
+  choices: [
+    'Nephron',
+    'Ureter',
+    'Alveolus',
+    'Neuron',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Nephron'],
+  score: 1,
+  rationale:
+    'A. Nephron.\n\nThe nephron is the functional unit of the kidney where filtration, reabsorption, and secretion take place.',
+},
+{
+  question: 'Which organ of the excretory system stores urine before it is excreted?',
+  choices: [
+    'Kidney',
+    'Ureter',
+    'Urinary bladder',
+    'Urethra',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Urinary bladder'],
+  score: 1,
+  rationale:
+    'C. Urinary bladder.\n\nThe urinary bladder temporarily stores urine until it is expelled from the body.',
+},
+{
+  question: 'In humans, fertilization normally occurs in the:',
+  choices: [
+    'Uterus',
+    'Ovary',
+    'Fallopian tube',
+    'Vagina',
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Fallopian tube'],
+  score: 1,
+  rationale:
+    'C. Fallopian tube.\n\nIn humans, fertilization typically occurs in the fallopian tube before the embryo moves to the uterus for implantation.',
+},
 ]}
