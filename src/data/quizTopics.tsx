@@ -78,4 +78,5 @@ export const quizTopics: QuizTopic[] = [
     // icon: <Laravel />,
     disabled: false,
   },
+  
 ]
