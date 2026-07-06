@@ -1,1 +1,247 @@
 
+import { Topic } from '.'
+
+export const cos114: Topic = {
+  topic: 'uicto-ent-102',
+  level: 'null',
+  totalQuestions: 50,
+  totalScore: 50,
+  totalTime: 1800, 
+  questions: [
+         {
+  question: 'What is the primary purpose of load assessment in solar system design?',
+  choices: [
+    'To determine the total energy required by electrical appliances',
+    'To calculate the price of solar panels',
+    'To measure battery temperature',
+    'To determine the height of the mounting structure'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['To determine the total energy required by electrical appliances'],
+  score: 1,
+  rationale: 'Load assessment determines the total power and daily energy demand of all appliances before sizing any solar system components.'
+},
+{
+  question: 'Which component converts Direct Current (DC) into Alternating Current (AC)?',
+  choices: [
+    'Charge controller',
+    'Battery',
+    'Inverter',
+    'Solar panel'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Inverter'],
+  score: 1,
+  rationale: 'An inverter converts the DC electricity supplied by solar panels or batteries into AC electricity used by most household appliances.'
+},
+{
+  question: 'Which type of inverter produces an electrical waveform similar to that supplied by the national grid?',
+  choices: [
+    'Modified sine wave inverter',
+    'PWM inverter',
+    'Pure sine wave inverter',
+    'Grid regulator'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Pure sine wave inverter'],
+  score: 1,
+  rationale: 'A pure sine wave inverter produces a smooth waveform that closely matches grid electricity, making it suitable for all appliances.'
+},
+{
+  question: 'Which appliance is most suitable for use with a pure sine wave inverter?',
+  choices: [
+    'Medical equipment',
+    'Basic incandescent light bulb',
+    'Simple electrical tool',
+    'Resistive heater only'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Medical equipment'],
+  score: 1,
+  rationale: 'Sensitive devices such as medical equipment require the clean output provided by a pure sine wave inverter.'
+},
+{
+  question: 'One major disadvantage of a modified sine wave inverter is that it:',
+  choices: [
+    'Cannot produce AC electricity',
+    'Can damage sensitive electronic equipment over time',
+    'Requires sunlight to operate directly',
+    'Cannot power light bulbs'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Can damage sensitive electronic equipment over time'],
+  score: 1,
+  rationale: 'Modified sine wave inverters produce a stepped waveform that may reduce the lifespan of sensitive electronics.'
+},
+{
+  question: 'What is the primary function of a charge controller in a solar power system?',
+  choices: [
+    'Increase solar panel voltage',
+    'Regulate voltage and current flowing to the battery',
+    'Convert AC to DC',
+    'Store electrical energy'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Regulate voltage and current flowing to the battery'],
+  score: 1,
+  rationale: 'A charge controller regulates charging current and voltage to protect batteries from damage.'
+},
+{
+  question: 'What could happen if a solar battery is connected without a charge controller?',
+  choices: [
+    'The inverter becomes larger',
+    'The battery may overcharge or discharge excessively',
+    'The solar panels stop producing electricity',
+    'The battery voltage automatically doubles'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['The battery may overcharge or discharge excessively'],
+  score: 1,
+  rationale: 'Charge controllers prevent overcharging and excessive discharge, both of which shorten battery life.'
+},
+{
+  question: 'Which charge controller continuously tracks the maximum power output of solar panels?',
+  choices: [
+    'PWM controller',
+    'MPPT controller',
+    'Hybrid controller',
+    'Grid controller'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['MPPT controller'],
+  score: 1,
+  rationale: 'MPPT controllers maximize power extraction by tracking the panel’s maximum power point.'
+},
+{
+  question: 'Which charge controller is generally recommended for medium and large solar systems?',
+  choices: [
+    'PWM controller',
+    'Series controller',
+    'MPPT controller',
+    'Relay controller'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['MPPT controller'],
+  score: 1,
+  rationale: 'MPPT controllers provide higher efficiency and are recommended for medium and large installations.'
+},
+{
+  question: 'According to the lecture note, the efficiency of an MPPT charge controller is approximately:',
+  choices: [
+    '40–55%',
+    '60–70%',
+    '80–85%',
+    '95–99%'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['95–99%'],
+  score: 1,
+  rationale: 'The lecture states that MPPT controllers typically operate with an efficiency of 95–99%.'
+},
+{
+  question: 'System compatibility means ensuring that:',
+  choices: [
+    'All solar components work together safely and efficiently',
+    'Only the batteries are compatible',
+    'Every appliance uses the same voltage',
+    'Solar panels always produce AC electricity'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['All solar components work together safely and efficiently'],
+  score: 1,
+  rationale: 'System compatibility ensures that solar panels, batteries, inverters, and charge controllers operate together safely.'
+},
+{
+  question: 'A 24V battery should be paired with which inverter?',
+  choices: [
+    '12V inverter',
+    '24V inverter',
+    '48V inverter',
+    '220V inverter'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['24V inverter'],
+  score: 1,
+  rationale: 'The battery voltage must match the inverter voltage for proper operation.'
+},
+{
+  question: 'If the total connected load is 700W, which inverter rating is recommended in the lecture?',
+  choices: [
+    '500W',
+    '700W',
+    '800W',
+    '1000W'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['1000W'],
+  score: 1,
+  rationale: 'The inverter should be rated higher than the connected load; the lecture recommends a 1000W inverter for a 700W load.'
+},
+{
+  question: 'Which of the following is a possible consequence of poor system compatibility?',
+  choices: [
+    'Improved charging speed',
+    'Lower installation cost',
+    'Equipment damage',
+    'Higher solar irradiance'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Equipment damage'],
+  score: 1,
+  rationale: 'Poor compatibility can cause equipment damage, battery failure, overheating, reduced efficiency, and fire hazards.'
+},
+{
+  question: 'An off-grid solar system operates:',
+  choices: [
+    'Only at night',
+    'Without connection to the utility grid',
+    'Only with a diesel generator',
+    'Using AC electricity only'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Without connection to the utility grid'],
+  score: 1,
+  rationale: 'An off-grid system is completely independent of the utility grid.'
+},
+{
+  question: 'Which of the following is an advantage of an off-grid solar system?',
+  choices: [
+    'Unlimited battery storage',
+    'Energy independence',
+    'Free equipment maintenance',
+    'Lower battery cost'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Energy independence'],
+  score: 1,
+  rationale: 'Off-grid systems provide energy independence and are suitable for remote areas.'
+},
+{
+  question: 'A hybrid solar system combines solar panels, batteries, and:',
+  choices: [
+    'Only wind turbines',
+    'The utility grid or a generator',
+    'Hydroelectric turbines',
+    'Coal-powered generators only'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['The utility grid or a generator'],
+  score: 1,
+  rationale: 'Hybrid systems integrate solar energy with the utility grid or a backup generator for greater reliability.'
+},
+{
+  question: 'Compared with hybrid systems, off-grid systems generally require:',
+  choices: [
+    'Smaller battery storage',
+    'No batteries',
+    'Larger battery storage',
+    'Only AC power'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Larger battery storage'],
+  score: 1,
+  rationale: 'Because off-grid systems have no grid backup, they require larger battery storage to supply power when solar energy is unavailable.'
+},
+
+  ],
+}
