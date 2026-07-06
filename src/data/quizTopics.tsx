@@ -83,4 +83,9 @@ export const quizTopics: QuizTopic[] = [
     // icon: <Laravel />,
     disabled: false,
   },
+    {
+    title: 'UICTO-ENT 102',
+    // icon: <Laravel />,
+    disabled: false,
+  },
 ]
