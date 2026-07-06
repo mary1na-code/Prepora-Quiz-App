@@ -1,4 +1,4 @@
-import { Moon, Sun } from '../../config/icons'
+ import { Moon, Sun } from '../../config/icons'
 import { FC } from 'react'
 
 interface ToggleThemeProps {

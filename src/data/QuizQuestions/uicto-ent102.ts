@@ -1,7 +1,7 @@
 
 import { Topic } from '.'
 
-export const uicto-ent102: Topic = {
+export const uicto_ent102: Topic = {
   topic: 'uicto-ent-102',
   level: 'null',
   totalQuestions: 50,
