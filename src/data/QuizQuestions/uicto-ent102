@@ -242,6 +242,240 @@ export const uicto-ent102: Topic = {
   score: 1,
   rationale: 'Because off-grid systems have no grid backup, they require larger battery storage to supply power when solar energy is unavailable.'
 },
+{
+  question: 'Which type of solar installation is fixed directly on rooftops?',
+  choices: [
+    'Ground-mounted system',
+    'Pole-mounted system',
+    'Roof-mounted system',
+    'Floating solar system'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Roof-mounted system'],
+  score: 1,
+  rationale: 'Roof-mounted systems are installed directly on rooftops and are common in residential and commercial buildings.'
+},
+{
+  question: 'Which type of solar installation is most suitable for large solar farms?',
+  choices: [
+    'Roof-mounted system',
+    'Pole-mounted system',
+    'Ground-mounted system',
+    'Floating solar system'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Ground-mounted system'],
+  score: 1,
+  rationale: 'Ground-mounted systems are installed on open land and are ideal for large-scale solar farms.'
+},
+{
+  question: 'According to the lecture note, solar panels in Nigeria should generally face which direction for optimal performance?',
+  choices: [
+    'North',
+    'East',
+    'South',
+    'West'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['South'],
+  score: 1,
+  rationale: 'The lecture recommends that solar panels in Nigeria generally face south to receive maximum sunlight.'
+},
+{
+  question: 'What is the main purpose of leaving space beneath solar panels?',
+  choices: [
+    'To reduce installation cost',
+    'To improve airflow and reduce overheating',
+    'To increase panel weight',
+    'To simplify wiring'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['To improve airflow and reduce overheating'],
+  score: 1,
+  rationale: 'Proper ventilation beneath solar panels improves efficiency by reducing overheating.'
+},
+{
+  question: 'Which of the following is a common mistake during panel installation?',
+  choices: [
+    'Providing adequate ventilation',
+    'Using quality mounting materials',
+    'Installing panels under shade',
+    'Following manufacturer guidelines'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Installing panels under shade'],
+  score: 1,
+  rationale: 'Shade significantly reduces the amount of sunlight reaching the panels, lowering energy production.'
+},
+{
+  question: 'Which Personal Protective Equipment (PPE) is specifically required when working on rooftops?',
+  choices: [
+    'Reflective vest',
+    'Safety harness',
+    'Safety glasses',
+    'Protective gloves'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Safety harness'],
+  score: 1,
+  rationale: 'A safety harness protects workers from falls during roof installations.'
+},
+{
+  question: 'Before wiring a solar system, installers should first:',
+  choices: [
+    'Increase the battery voltage',
+    'Switch off all power sources',
+    'Disconnect the solar panels permanently',
+    'Remove the inverter'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Switch off all power sources'],
+  score: 1,
+  rationale: 'Electrical safety requires that all power sources be switched off before wiring begins.'
+},
+{
+  question: 'Which instrument is used to verify voltage during installation?',
+  choices: [
+    'Spirit level',
+    'Multimeter',
+    'Angle finder',
+    'Hammer'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Multimeter'],
+  score: 1,
+  rationale: 'A multimeter measures electrical quantities such as voltage to ensure safe installation.'
+},
+{
+  question: 'Which of the following is recommended when working at heights?',
+  choices: [
+    'Work during heavy rain',
+    'Use certified ladders',
+    'Work without assistance',
+    'Ignore weather conditions'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Use certified ladders'],
+  score: 1,
+  rationale: 'Certified ladders improve safety and reduce the risk of accidents during installation.'
+},
+{
+  question: 'Which measuring tool is used to check whether a surface is perfectly level?',
+  choices: [
+    'Wire stripper',
+    'Spirit level',
+    'Cable cutter',
+    'Crimping tool'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Spirit level'],
+  score: 1,
+  rationale: 'A spirit level is used to ensure mounting structures are level before installing panels.'
+},
+{
+  question: 'Which tool is specifically used to remove insulation from electrical wires?',
+  choices: [
+    'Wire stripper',
+    'Socket wrench',
+    'Electric drill',
+    'Hammer'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Wire stripper'],
+  score: 1,
+  rationale: 'A wire stripper removes insulation without damaging the conductor.'
+},
+{
+  question: 'Which tool is commonly used to drill holes into mounting surfaces?',
+  choices: [
+    'Cable cutter',
+    'Electric drill',
+    'Multimeter',
+    'Spirit level'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Electric drill'],
+  score: 1,
+  rationale: 'An electric drill is used to create holes for mounting brackets and other hardware.'
+},
+{
+  question: 'Which activity should be completed before installing a solar PV system?',
+  choices: [
+    'Testing inverter output',
+    'Conducting a site survey',
+    'Replacing the batteries',
+    'Connecting household appliances'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Conducting a site survey'],
+  score: 1,
+  rationale: 'A site survey helps identify shading, roof strength, and other factors that affect installation.'
+},
+{
+  question: 'During installation, proper cable management is important because it:',
+  choices: [
+    'Reduces installation time only',
+    'Improves safety and system organization',
+    'Increases battery voltage',
+    'Eliminates the need for grounding'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Improves safety and system organization'],
+  score: 1,
+  rationale: 'Good cable management prevents damage, reduces hazards, and makes maintenance easier.'
+},
+{
+  question: 'Which task should be performed after installation is complete?',
+  choices: [
+    'Increase the panel tilt angle',
+    'Inspect all electrical connections',
+    'Purchase additional panels',
+    'Disconnect the inverter'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Inspect all electrical connections'],
+  score: 1,
+  rationale: 'Inspecting connections ensures the installation is safe and operating correctly.'
+},
+{
+  question: 'What formula is used to calculate electrical energy consumption?',
+  choices: [
+    'Energy = Voltage × Current',
+    'Energy = Power × Time',
+    'Energy = Current ÷ Voltage',
+    'Energy = Resistance × Current'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['Energy = Power × Time'],
+  score: 1,
+  rationale: 'Electrical energy is calculated by multiplying power by the duration of use.'
+},
+{
+  question: 'A house consumes 6,500 Wh of energy daily. Using 5 peak sun hours, what minimum solar panel capacity is required before adding system losses?',
+  choices: [
+    '650 W',
+    '1,000 W',
+    '1,300 W',
+    '1,625 W'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['1,300 W'],
+  score: 1,
+  rationale: 'Panel capacity = Daily Energy ÷ Peak Sun Hours = 6,500 ÷ 5 = 1,300 W.'
+},
+{
+  question: 'After adding approximately 25% to account for system losses, what solar panel capacity is recommended for a daily energy demand of 6,500 Wh?',
+  choices: [
+    '1,300 W',
+    '1,450 W',
+    '1,625 W',
+    '2,000 W'
+  ],
+  type: 'MCQs',
+  correctAnswers: ['1,625 W'],
+  score: 1,
+  rationale: 'Adding 25% losses gives 1,300 W × 1.25 ≈ 1,625 W, which is the recommended minimum capacity.'
+},
 
   ],
 }
