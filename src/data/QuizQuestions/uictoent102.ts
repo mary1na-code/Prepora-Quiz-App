@@ -2,11 +2,11 @@
 import { Topic } from '.'
 
 export const uicto_ent102: Topic = {
-  topic: 'uicto-ent-102',
+  topic: 'uicto_ent102',
   level: 'null',
   totalQuestions: 50,
   totalScore: 50,
-  totalTime: 1800, 
+  totalTime: 2400, 
   questions: [
          {
   question: 'What is the primary purpose of load assessment in solar system design?',
