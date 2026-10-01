@@ -8,6 +8,7 @@ import QuizDetailsScreen from '../QuizDetailsScreen'
 import QuizTopicsScreen from '../QuizTopicsScreen'
 import ResultScreen from '../ResultScreen'
 import SplashScreen from '../SplashScreen'
+import SignupForm from '../Auth/SignUpForm.tsx'
 
 function Main() {
   const { currentScreen, setCurrentScreen } = useQuiz()
@@ -25,6 +26,7 @@ function Main() {
   }, [setCurrentScreen, currentScreen])
 
   const screenComponents = {
+    [ScreenTypes.SignupForm]: <SignupForm />,
     [ScreenTypes.SplashScreen]: <SplashScreen />,
     [ScreenTypes.QuizTopicsScreen]: <QuizTopicsScreen />,
     [ScreenTypes.QuizDetailsScreen]: <QuizDetailsScreen />,
