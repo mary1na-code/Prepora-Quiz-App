@@ -8,7 +8,7 @@
 
 [![Premium Version](https://img.shields.io/badge/PREMIUM_%20VERSION-AVAILABLE-%2300C7B7?style=for-the-badge&logo=stellar&logoColor=white)](https://basit313.gumroad.com/l/react-quiz-app-template)
 
-✨ **Quiz App Template** built with React 19 • 🚀 Tailwind V4 • 🎨 Modern Design • 📱 Fully Responsive • 💻 Developer Friendly
+✨ **Quiz App Template** built with React 19 • Tailwind V4 • Modern Design • Fully Responsive
 
 ![React Quiz App Template Cover Image](./src/assets/images/ReactJS-Quiz-App-Template.jpg)
 
