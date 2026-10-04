@@ -19,11 +19,11 @@ function Main() {
     }
 
     const timeout = setTimeout(() => {
-      setCurrentScreen(ScreenTypes.QuizTopicsScreen)
-    }, 1000)
+        setCurrentScreen(ScreenTypes. QuizTopicsScreen)
+      }, 1000)
 
-    return () => clearTimeout(timeout)
-  }, [setCurrentScreen, currentScreen])
+      return () => clearTimeout(timeout)
+    }, [setCurrentScreen, currentScreen])
 
   const screenComponents = {
     [ScreenTypes.SplashScreen]: <SplashScreen />,
