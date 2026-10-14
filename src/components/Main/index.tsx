@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, type ReactNode } from 'react'
 
 import { useQuiz } from '../../context/QuizContext'
 import { ScreenTypes } from '../../types'
@@ -8,7 +8,6 @@ import QuizDetailsScreen from '../QuizDetailsScreen'
 import QuizTopicsScreen from '../QuizTopicsScreen'
 import ResultScreen from '../ResultScreen'
 import SplashScreen from '../SplashScreen'
-import SignupForm from '../Auth/SignupForm.tsx'
 
 function Main() {
   const { currentScreen, setCurrentScreen } = useQuiz()
@@ -28,9 +27,8 @@ function Main() {
         // dependency array to ensure the effect runs when setCurrentScreen or currentScreen changes
     )
 
-  const screenComponents = {
+  const screenComponents: Partial<Record<ScreenTypes, ReactNode>> = {
     [ScreenTypes.SplashScreen]: <SplashScreen />,
-    [ScreenTypes.SignupForm]: <SignupForm />,
     [ScreenTypes.QuizTopicsScreen]: <QuizTopicsScreen />,
     [ScreenTypes.QuizDetailsScreen]: <QuizDetailsScreen />,
     [ScreenTypes.QuestionScreen]: <QuestionScreen />,

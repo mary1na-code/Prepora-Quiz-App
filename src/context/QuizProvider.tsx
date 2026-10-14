@@ -63,6 +63,8 @@ const clearSession = () => {
   }
 }
 
+export const clearPersistedQuizSession = clearSession
+
 const QuizProvider = ({ children }: QuizProviderProps) => {
   const session = loadSession()
 
